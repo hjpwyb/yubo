@@ -24,9 +24,9 @@ jobs:
       run: |
         pip install requests beautifulsoup4
 
-    - name: Clean up old M3U files
+    - name: Clean up old specific M3U files
       run: |
-        find scripts/aaa -type f -name '*.m3u' -exec rm -f {} +
+        find scripts/aaa -type f -name 'playlistw.m3u' -exec rm -f {} +
 
     - name: Run script
       run: |
@@ -34,7 +34,7 @@ jobs:
 
     - name: Check for generated files
       run: |
-        ls -la scripts/aaa/  # 列出目录中的所有文件，确认 M3U 文件是否存在
+        ls -la scripts/aaa/  # 列出目录中的所有文件，确认新的 M3U 文件是否生成
 
     - name: Commit and push changes
       env:
