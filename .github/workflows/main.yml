@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - main
+  schedule:
+    - cron: '0 0 * * *'  # 每天午夜（UTC）触发工作流
 
 jobs:
   build:
