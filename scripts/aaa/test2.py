@@ -8,7 +8,7 @@ from bs4 import BeautifulSoup
 TEMP_FILE = 'combined.txt'
 CLEANED_FILE = 'cleaned_combined.txt'
 OUTPUT_M3U_FILE = 'playlisty.m3u'
-OUTPUT_DIR = 'output/scripts/aaa'  # 指定输出目录
+OUTPUT_DIR = 'scripts/aaa'  # 指定输出目录
 
 def extract_domain(url):
     try:
@@ -69,47 +69,45 @@ def clean_text(text):
 def write_file(file_path, text):
     with open(file_path, 'w', encoding='utf-8') as file:
         file.write(text)
+    print(f"写入文件 {file_path}, 内容长度: {len(text)}")
 
 def read_file(file_path):
     with open(file_path, 'r', encoding='utf-8') as file:
         content = file.read()
+    print(f"读取文件 {file_path}, 内容长度: {len(content)}")
     return content
 
 def extract_data():
     title_pattern = re.compile(r'<h3 class="title">(.*?)<\/h3>', re.DOTALL)
     m3u8_pattern = re.compile(r'https://[^\s"]+\.m3u8')
 
-    with open(CLEANED_FILE, 'r', encoding='utf-8') as file:
-        content = file.read()
+    content = read_file(CLEANED_FILE)
 
     content = content.replace('\\', '')
 
     titles = title_pattern.findall(content)
     m3u8_links = m3u8_pattern.findall(content)
 
+    print(f"提取到的标题数量: {len(titles)}")
+    print(f"提取到的 m3u8 链接数量: {len(m3u8_links)}")
+
     return titles, m3u8_links
 
-def ensure_directory_exists(directory):
-    if not os.path.exists(directory):
-        os.makedirs(directory)
-
 def generate_playlist_m3u(titles, m3u8_links):
-    try:
-        ensure_directory_exists(OUTPUT_DIR)
-        
-        output_m3u_path = os.path.join(OUTPUT_DIR, OUTPUT_M3U_FILE)
-        
-        if os.path.exists(output_m3u_path):
-            os.remove(output_m3u_path)
-        
-        with open(output_m3u_path, 'w', encoding='utf-8') as m3u_file:
-            m3u_file.write('#EXTM3U\n')
-            for title, link in zip(titles, m3u8_links):
-                m3u_file.write(f"#EXTINF:-1,{title}\n{link}\n")
-        
-        print(f"\n已生成 {output_m3u_path} 文件，包含 {len(m3u8_links)} 个链接。")
-    except Exception as e:
-        print(f"生成 M3U 文件时出错: {e}")
+    if not os.path.exists(OUTPUT_DIR):
+        os.makedirs(OUTPUT_DIR)
+
+    output_m3u_path = os.path.join(OUTPUT_DIR, OUTPUT_M3U_FILE)
+    
+    if os.path.exists(output_m3u_path):
+        os.remove(output_m3u_path)
+    
+    with open(output_m3u_path, 'w', encoding='utf-8') as m3u_file:
+        m3u_file.write('#EXTM3U\n')
+        for title, link in zip(titles, m3u8_links):
+            m3u_file.write(f"#EXTINF:-1,{title}\n{link}\n")
+    
+    print(f"\n已生成 {output_m3u_path} 文件，包含 {len(m3u8_links)} 个链接。")
 
 def main():
     if not os.path.exists('temp_pages'):
