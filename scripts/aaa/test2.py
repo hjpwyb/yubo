@@ -89,21 +89,27 @@ def extract_data():
 
     return titles, m3u8_links
 
-def generate_playlist_m3u(titles, m3u8_links):
-    if not os.path.exists(OUTPUT_DIR):
-        os.makedirs(OUTPUT_DIR)
+def ensure_directory_exists(directory):
+    if not os.path.exists(directory):
+        os.makedirs(directory)
 
-    output_m3u_path = os.path.join(OUTPUT_DIR, OUTPUT_M3U_FILE)
-    
-    if os.path.exists(output_m3u_path):
-        os.remove(output_m3u_path)
-    
-    with open(output_m3u_path, 'w', encoding='utf-8') as m3u_file:
-        m3u_file.write('#EXTM3U\n')
-        for title, link in zip(titles, m3u8_links):
-            m3u_file.write(f"#EXTINF:-1,{title}\n{link}\n")
-    
-    print(f"\n已生成 {output_m3u_path} 文件，包含 {len(m3u8_links)} 个链接。")
+def generate_playlist_m3u(titles, m3u8_links):
+    try:
+        ensure_directory_exists(OUTPUT_DIR)
+        
+        output_m3u_path = os.path.join(OUTPUT_DIR, OUTPUT_M3U_FILE)
+        
+        if os.path.exists(output_m3u_path):
+            os.remove(output_m3u_path)
+        
+        with open(output_m3u_path, 'w', encoding='utf-8') as m3u_file:
+            m3u_file.write('#EXTM3U\n')
+            for title, link in zip(titles, m3u8_links):
+                m3u_file.write(f"#EXTINF:-1,{title}\n{link}\n")
+        
+        print(f"\n已生成 {output_m3u_path} 文件，包含 {len(m3u8_links)} 个链接。")
+    except Exception as e:
+        print(f"生成 M3U 文件时出错: {e}")
 
 def main():
     if not os.path.exists('temp_pages'):
