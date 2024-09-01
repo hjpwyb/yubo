@@ -12,6 +12,11 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # 确保完整检出所有提交
+
+      - name: List files in repository
+        run: ls -R  # 列出整个工作目录中的所有文件，帮助确认文件结构是否正确
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -22,6 +27,10 @@ jobs:
         run: |
           pip install requests beautifulsoup4
         
+      - name: Debug - List files in scripts/aaa/
+        run: |
+          ls -la scripts/aaa/  # 列出 scripts/aaa/ 目录中的所有文件，确认 test2.py 是否存在
+
       - name: Run Python script
         run: python scripts/aaa/test2.py
 
