@@ -7,23 +7,25 @@ on:
 
 jobs:
   run-script:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest  # 使用最新的 Ubuntu 虚拟环境
 
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # 确保完整检出所有提交
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.9'
-
+      
       - name: Install dependencies
         run: |
           pip install requests beautifulsoup4
-
+        
       - name: Run Python script
-        run: python scripts/aaa/test2.py  # 运行 Python 脚本，确保脚本生成正确的 .m3u 文件
+        run: python scripts/aaa/test2.py
 
       - name: Force update file timestamps
         run: |
@@ -37,11 +39,12 @@ jobs:
         run: |
           git config --global user.name 'github-actions'
           git config --global user.email 'github-actions@github.com'
+          git config --global --add safe.directory /github/workspace
 
       - name: Commit and push changes
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # 确保这个 TOKEN 在你的仓库中正确配置
         run: |
-          git add scripts/aaa/playlisty.m3u  # 只添加生成的 .m3u 文件
+          git add -A  # 添加所有更改，包括删除的文件
           git commit -m "Update M3U files" || echo "No changes to commit"
-          git push origin main || echo "Nothing to push"
+          git push || echo "Nothing to push"
