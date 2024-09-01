@@ -1,4 +1,3 @@
-
 import os
 import re
 import requests
@@ -20,7 +19,7 @@ def extract_domain(url):
 
 def fetch_and_extract_subpage(url):
     try:
-        response = requests.get(url)
+        response = requests.get(url, timeout=10)  # 设置超时
         response.raise_for_status()
         text = response.text
 
@@ -39,7 +38,7 @@ def fetch_and_extract_subpage(url):
 
 def get_subpage_links(main_page_url):
     try:
-        response = requests.get(main_page_url)
+        response = requests.get(main_page_url, timeout=10)  # 设置超时
         response.raise_for_status()
         soup = BeautifulSoup(response.text, 'html.parser')
         links = soup.find_all('a', href=True)
@@ -111,6 +110,7 @@ def generate_playlist_m3u(titles, m3u8_links):
     print(f"\n已生成 {output_m3u_path} 文件，包含 {len(m3u8_links)} 个链接。")
 
 def main():
+    print("Starting script...")
     if not os.path.exists('temp_pages'):
         os.makedirs('temp_pages')
 
@@ -124,32 +124,32 @@ def main():
     
     for domain in possible_domains:
         main_page_url = f'{domain}/vodtype/8-1.html'
-        print(f"尝试访问 {main_page_url}...")
-        
+        print(f"Trying domain: {main_page_url}...")
+
         try:
-            response = requests.get(main_page_url)
+            response = requests.get(main_page_url, timeout=10)
             if response.status_code == 200 and '/vodtype/' in response.text:
                 valid_domain = domain
-                print(f"找到有效域名: {domain}")
+                print(f"Valid domain found: {domain}")
                 break
-        except requests.RequestException:
-            continue
-    
+        except requests.RequestException as e:
+            print(f"Request failed for {main_page_url}: {e}")
+
     if not valid_domain:
-        print("没有找到有效的域名。")
+        print("No valid domain found.")
         return
 
     # 处理所有页面
     for i in range(1, 6):
         main_page_url = f'{valid_domain}/vodtype/8-{i}.html'
-        print(f"处理页面: {main_page_url}")
+        print(f"Processing page: {main_page_url}")
         
         subpage_links = get_subpage_links(main_page_url)
         if not subpage_links:
-            print(f"未提取到子页面链接或链接数量为0，跳过页面: {main_page_url}")
+            print(f"No subpage links found for {main_page_url}")
             continue
-    
-        print(f"提取到的子页面链接数量: {len(subpage_links)}")
+
+        print(f"Number of subpage links found: {len(subpage_links)}")
     
         for url in subpage_links:
             snippet = fetch_and_extract_subpage(url)
@@ -158,30 +158,28 @@ def main():
                     file.write(snippet)
                     file.write("\n" + "="*80 + "\n")
 
-    print(f"数据已从子页面保存到 {TEMP_FILE}。")
+    print(f"Data saved to {TEMP_FILE}")
 
     content = read_file(TEMP_FILE)
-    
+
     if not content.strip():
-        print("未能读取到子页面内容。")
+        print("No content read from subpages.")
         return
-    
-    print("正在清理内容...")
+
+    print("Cleaning content...")
     cleaned_content = clean_text(content)
     write_file(CLEANED_FILE, cleaned_content)
-    
-    print(f"处理后的内容已保存到 {CLEANED_FILE}")
 
-    print("正在提取标题和 m3u8 链接...")
+    print("Extracting titles and m3u8 links...")
     titles, m3u8_links = extract_data()
-    
+
     if not titles or not m3u8_links:
-        print("没有提取到有效的标题或 m3u8 链接。")
+        print("No titles or m3u8 links extracted.")
         return
-    
+
     if len(titles) != len(m3u8_links):
-        print("警告: 标题和 m3u8 链接数量不匹配！")
-    
+        print("Warning: Titles and m3u8 links count mismatch!")
+
     generate_playlist_m3u(titles, m3u8_links)
 
 if __name__ == "__main__":
