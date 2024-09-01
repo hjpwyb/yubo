@@ -20,6 +20,10 @@ jobs:
       with:
         python-version: '3.9'
 
+    - name: Install dependencies
+      run: |
+        pip install requests beautifulsoup4
+
     - name: Clean up old M3U files
       run: |
         find scripts/aaa -type f -name '*.m3u' -exec rm -f {} +
