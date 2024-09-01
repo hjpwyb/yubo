@@ -8,7 +8,7 @@ from bs4 import BeautifulSoup
 TEMP_FILE = 'combined.txt'
 CLEANED_FILE = 'cleaned_combined.txt'
 OUTPUT_M3U_FILE = 'playlisty.m3u'
-OUTPUT_DIR = '/scripts/aaa'  # 指定输出目录
+OUTPUT_DIR = 'scripts/aaa'  # 指定输出目录
 
 def extract_domain(url):
     try:
