@@ -5,7 +5,7 @@ on:
     branches:
       - main
   schedule:
-    - cron: '0 0 * * *'  # 每天午夜（UTC）触发工作流
+    - cron: '10 0 * * *'  # 每天午夜12:10（UTC）触发工作流
 
 jobs:
   build:
