@@ -15,9 +15,6 @@ jobs:
         with:
           fetch-depth: 0  # 确保完整检出所有提交
 
-      - name: List files in repository
-        run: ls -R  # 列出整个工作目录中的所有文件，帮助确认文件结构是否正确
-
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
@@ -27,10 +24,6 @@ jobs:
         run: |
           pip install requests beautifulsoup4
         
-      - name: Debug - List files in scripts/aaa/
-        run: |
-          ls -la scripts/aaa/  # 列出 scripts/aaa/ 目录中的所有文件，确认 test2.py 是否存在
-
       - name: Run Python script
         run: python scripts/aaa/test2.py
 
@@ -46,8 +39,11 @@ jobs:
         run: |
           git config --global user.name 'github-actions'
           git config --global user.email 'github-actions@github.com'
+          git config --global --add safe.directory /github/workspace
 
       - name: Commit and push changes
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # 确保这个 TOKEN 在你的仓库中正确配置
         run: |
           git add -A  # 添加所有更改，包括删除的文件
           git commit -m "Update M3U files" || echo "No changes to commit"
