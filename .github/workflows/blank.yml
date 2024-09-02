@@ -5,7 +5,8 @@ on:
     branches:
       - main
   schedule:
-    - cron: '20 0 * * *'  # 每天午夜12:10（UTC）触发工作流
+    - cron: '20 0 * * *'  # 每天午夜12:20（UTC）触发工作流
+  workflow_dispatch:  # 允许手动触发工作流
 
 jobs:
   build:
@@ -46,3 +47,10 @@ jobs:
         git add -A
         git commit -m "Update M3U files" || echo "No changes to commit"
         git push || echo "Nothing to push"
+
+    - name: Manual Test Trigger
+      if: github.event_name == 'workflow_dispatch'
+      run: |
+        echo "Manual test triggered"
+        python scripts/aaa/test1.py
+        echo "Manual test completed"
