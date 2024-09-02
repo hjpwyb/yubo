@@ -6,7 +6,7 @@ on:
       - main
   schedule:
     - cron: '10 0 * * *'  # 每天午夜12:10（UTC）触发工作流
-
+  workflow_dispatch:  # 允许手动触发工作流
 jobs:
   build:
     runs-on: ubuntu-latest
