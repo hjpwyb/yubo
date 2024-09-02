@@ -5,8 +5,8 @@ from urllib.parse import urlparse, urljoin
 from bs4 import BeautifulSoup
 
 # 配置文件路径
-TEMP_FILE = 'combined.txt'
-CLEANED_FILE = 'cleaned_combined.txt'
+TEMP_FILE = 'scripts/aaa/combined.txt'
+CLEANED_FILE = 'scripts/aaa/cleaned_combined.txt'
 OUTPUT_M3U_FILE = 'playlisty.m3u'
 OUTPUT_DIR = 'scripts/aaa'  # 指定输出目录
 
