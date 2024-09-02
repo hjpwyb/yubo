@@ -1,4 +1,3 @@
-
 name: Update M3U Playlist
 
 on:
@@ -6,7 +5,7 @@ on:
     branches:
       - main
   schedule:
-    - cron: '10 0 * * *'  # 每天午夜12:10（UTC）触发工作流
+    - cron: '20 0 * * *'  # 每天午夜12:10（UTC）触发工作流
 
 jobs:
   build:
@@ -31,7 +30,7 @@ jobs:
 
     - name: Run script
       run: |
-        python scripts/aaa/test2.py  # 确保路径正确，运行脚本
+        python scripts/aaa/test1.py  # 确保路径正确，运行脚本
 
     - name: Check for generated files
       run: |
