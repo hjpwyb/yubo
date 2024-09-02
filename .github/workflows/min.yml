@@ -2,7 +2,7 @@ name: Run Python Script
 
 on:
   schedule:
-    - cron: '0 16 * * *'  # 根据 UTC 时间，调整到本地午夜 0 点运行
+    - cron: '0 17 * * *'  # 根据 UTC 时间，调整到本地午夜 0 点运行
   workflow_dispatch:  # 允许手动触发
 
 jobs:
