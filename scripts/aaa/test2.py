@@ -7,7 +7,7 @@ from bs4 import BeautifulSoup
 # 配置文件路径
 TEMP_FILE = 'scripts/aaa/combined.txt'
 CLEANED_FILE = 'scripts/aaa/cleaned_combined.txt'
-OUTPUT_M3U_FILE = 'playlisty.m3u'
+OUTPUT_M3U_FILE = 'playlisty.m3u'  # 修改为 playlisty.m3u
 OUTPUT_DIR = 'scripts/aaa'  # 指定输出目录
 
 def extract_domain(url):
@@ -99,9 +99,11 @@ def generate_playlist_m3u(titles, m3u8_links):
 
     output_m3u_path = os.path.join(OUTPUT_DIR, OUTPUT_M3U_FILE)
     
+    # 每次运行时删除旧的 playlisty.m3u 文件
     if os.path.exists(output_m3u_path):
         os.remove(output_m3u_path)
     
+    # 生成新的 playlisty.m3u 文件
     with open(output_m3u_path, 'w', encoding='utf-8') as m3u_file:
         m3u_file.write('#EXTM3U\n')
         for title, link in zip(titles, m3u8_links):
