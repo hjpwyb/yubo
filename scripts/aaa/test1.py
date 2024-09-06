@@ -7,8 +7,8 @@ from bs4 import BeautifulSoup
 # 配置文件路径
 TEMP_FILE = 'scripts/aaa/combined1.txt'
 CLEANED_FILE = 'scripts/aaa/cleaned_combined1.txt'
-OUTPUT_M3U_FILE = 'playlistw.m3u'  # 修改为 playlisty.m3u
-OUTPUT_DIR = 'scripts/aaa'  # 指定输出目录
+OUTPUT_M3U_FILE = 'playlisty.m3u'
+OUTPUT_DIR = 'scripts/aaa'
 
 def extract_domain(url):
     try:
@@ -19,7 +19,7 @@ def extract_domain(url):
 
 def fetch_and_extract_subpage(url):
     try:
-        response = requests.get(url)
+        response = requests.get(url, timeout=5)  # 增加超时
         response.raise_for_status()
         text = response.text
 
@@ -38,7 +38,7 @@ def fetch_and_extract_subpage(url):
 
 def get_subpage_links(main_page_url):
     try:
-        response = requests.get(main_page_url)
+        response = requests.get(main_page_url, timeout=5)
         response.raise_for_status()
         soup = BeautifulSoup(response.text, 'html.parser')
         links = soup.find_all('a', href=True)
@@ -111,6 +111,25 @@ def generate_playlist_m3u(titles, m3u8_links):
     
     print(f"\n已生成 {output_m3u_path} 文件，包含 {len(m3u8_links)} 个链接。")
 
+def get_valid_domain():
+    # 扩展域名范围 8260-8299 和 8360-8399
+    possible_domains = [f"http://82{j}ck.cc" for j in range(60, 100)] + [f"http://83{j}ck.cc" for j in range(60, 100)]
+    for domain in possible_domains:
+        main_page_url = f'{domain}/vodtype/9-1.html'
+        print(f"尝试访问 {main_page_url}...")
+
+        try:
+            # 增加超时设置
+            response = requests.get(main_page_url, timeout=5)
+            if response.status_code == 200 and '/vodtype/' in response.text:
+                print(f"找到有效域名: {domain}")
+                return domain
+        except requests.RequestException as e:
+            print(f"访问 {main_page_url} 失败: {e}")
+    
+    print("没有找到有效的域名。")
+    return None
+
 def main():
     if not os.path.exists('temp_pages'):
         os.makedirs('temp_pages')
@@ -119,25 +138,10 @@ def main():
     open(TEMP_FILE, 'w').close()
     open(CLEANED_FILE, 'w').close()
 
-    # 扩展域名试错范围
-    possible_domains = [f"http://82{j}ck.cc" for j in range(60, 100)] + [f"http://83{j}ck.cc" for j in range(60, 100)]
-    valid_domain = None
-    
-    for domain in possible_domains:
-        main_page_url = f'{domain}/vodtype/9-1.html'
-        print(f"尝试访问 {main_page_url}...")
-        
-        try:
-            response = requests.get(main_page_url)
-            if response.status_code == 200 and '/vodtype/' in response.text:
-                valid_domain = domain
-                print(f"找到有效域名: {domain}")
-                break
-        except requests.RequestException:
-            continue
+    valid_domain = get_valid_domain()
     
     if not valid_domain:
-        print("没有找到有效的域名。")
+        print("没有有效域名，停止运行。")
         return
 
     # 处理所有页面
