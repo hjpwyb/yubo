@@ -19,7 +19,7 @@ def extract_domain(url):
 
 def fetch_and_extract_subpage(url):
     try:
-        response = requests.get(url, timeout=5)  # 增加超时
+        response = requests.get(url, timeout=10)
         response.raise_for_status()
         text = response.text
 
@@ -32,13 +32,16 @@ def fetch_and_extract_subpage(url):
 
         return snippet
 
+    except requests.RequestException as e:
+        print(f"网络请求失败 {url}: {e}")
+        return None
     except Exception as e:
-        print(f"Failed to fetch {url}: {e}")
+        print(f"处理失败 {url}: {e}")
         return None
 
 def get_subpage_links(main_page_url):
     try:
-        response = requests.get(main_page_url, timeout=5)
+        response = requests.get(main_page_url, timeout=10)
         response.raise_for_status()
         soup = BeautifulSoup(response.text, 'html.parser')
         links = soup.find_all('a', href=True)
@@ -55,8 +58,11 @@ def get_subpage_links(main_page_url):
         center_start_index = max(0, (num_links - 40) // 2)
         return subpage_links[center_start_index:center_start_index + 40]
 
+    except requests.RequestException as e:
+        print(f"网络请求失败 {main_page_url}: {e}")
+        return []
     except Exception as e:
-        print(f"Failed to fetch main page {main_page_url}: {e}")
+        print(f"处理失败 {main_page_url}: {e}")
         return []
 
 def clean_text(text):
@@ -67,22 +73,28 @@ def clean_text(text):
     return text
 
 def write_file(file_path, text):
-    with open(file_path, 'w', encoding='utf-8') as file:
-        file.write(text)
-    print(f"写入文件 {file_path}, 内容长度: {len(text)}")
+    try:
+        with open(file_path, 'w', encoding='utf-8') as file:
+            file.write(text)
+        print(f"写入文件 {file_path}, 内容长度: {len(text)}")
+    except IOError as e:
+        print(f"文件写入失败 {file_path}: {e}")
 
 def read_file(file_path):
-    with open(file_path, 'r', encoding='utf-8') as file:
-        content = file.read()
-    print(f"读取文件 {file_path}, 内容长度: {len(content)}")
-    return content
+    try:
+        with open(file_path, 'r', encoding='utf-8') as file:
+            content = file.read()
+        print(f"读取文件 {file_path}, 内容长度: {len(content)}")
+        return content
+    except IOError as e:
+        print(f"文件读取失败 {file_path}: {e}")
+        return ""
 
 def extract_data():
     title_pattern = re.compile(r'<h3 class="title">(.*?)<\/h3>', re.DOTALL)
     m3u8_pattern = re.compile(r'https://[^\s"]+\.m3u8')
 
     content = read_file(CLEANED_FILE)
-
     content = content.replace('\\', '')
 
     titles = title_pattern.findall(content)
@@ -119,8 +131,7 @@ def get_valid_domain():
         print(f"尝试访问 {main_page_url}...")
 
         try:
-            # 增加超时设置
-            response = requests.get(main_page_url, timeout=5)
+            response = requests.get(main_page_url, timeout=10)
             if response.status_code == 200 and '/vodtype/' in response.text:
                 print(f"找到有效域名: {domain}")
                 return domain
@@ -135,8 +146,10 @@ def main():
         os.makedirs('temp_pages')
 
     # 每次运行前清空文件
-    open(TEMP_FILE, 'w').close()
-    open(CLEANED_FILE, 'w').close()
+    if os.path.exists(TEMP_FILE):
+        open(TEMP_FILE, 'w').close()
+    if os.path.exists(CLEANED_FILE):
+        open(CLEANED_FILE, 'w').close()
 
     valid_domain = get_valid_domain()
     
@@ -159,9 +172,7 @@ def main():
         for url in subpage_links:
             snippet = fetch_and_extract_subpage(url)
             if snippet:
-                with open(TEMP_FILE, 'a', encoding='utf-8') as file:
-                    file.write(snippet)
-                    file.write("\n" + "="*80 + "\n")
+                write_file(TEMP_FILE, snippet + "\n" + "="*80 + "\n")
 
     print(f"数据已从子页面保存到 {TEMP_FILE}。")
 
