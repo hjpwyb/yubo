@@ -7,7 +7,7 @@ from bs4 import BeautifulSoup
 # 配置文件路径
 TEMP_FILE = 'scripts/aaa/combined.txt'
 CLEANED_FILE = 'scripts/aaa/cleaned_combined.txt'
-OUTPUT_M3U_FILE = 'playlisty.m3u'  # 修改为 playlisty.m3u
+OUTPUT_M3U_FILE = 'playlistw.m3u'  # 修改为 playlisty.m3u
 OUTPUT_DIR = 'scripts/aaa'  # 指定输出目录
 
 def extract_domain(url):
@@ -124,7 +124,7 @@ def main():
     valid_domain = None
     
     for domain in possible_domains:
-        main_page_url = f'{domain}/vodtype/9-1.html'
+        main_page_url = f'{domain}/vodtype/8-1.html'
         print(f"尝试访问 {main_page_url}...")
         
         try:
@@ -142,7 +142,7 @@ def main():
 
     # 处理所有页面
     for i in range(1, 6):
-        main_page_url = f'{valid_domain}/vodtype/9-{i}.html'
+        main_page_url = f'{valid_domain}/vodtype/8-{i}.html'
         print(f"处理页面: {main_page_url}")
         
         subpage_links = get_subpage_links(main_page_url)
