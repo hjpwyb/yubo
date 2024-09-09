@@ -28,11 +28,11 @@ jobs:
 
     - name: Clean up old specific M3U files
       run: |
-        find scripts/aaa -type f -name 'playlistw.m3u' -exec rm -f {} +
+        find scripts/aaa -type f -name 'playlisty.m3u' -exec rm -f {} +
 
     - name: Run script
       run: |
-        python scripts/aaa/test2.py  # 确保路径正确，运行脚本
+        python scripts/aaa/test1.py  # 确保路径正确，运行脚本
 
     - name: Check for generated files
       run: |
