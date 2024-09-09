@@ -1,3 +1,4 @@
+
 import os
 import re
 import requests
@@ -7,8 +8,8 @@ from bs4 import BeautifulSoup
 # 配置文件路径
 TEMP_FILE = 'scripts/aaa/combined1.txt'
 CLEANED_FILE = 'scripts/aaa/cleaned_combined1.txt'
-OUTPUT_M3U_FILE = 'playlisty.m3u'
-OUTPUT_DIR = 'scripts/aaa'
+OUTPUT_M3U_FILE = 'playlisty.m3u'  # 修改为 playlisty.m3u
+OUTPUT_DIR = 'scripts/aaa'  # 指定输出目录
 
 def extract_domain(url):
     try:
@@ -19,7 +20,7 @@ def extract_domain(url):
 
 def fetch_and_extract_subpage(url):
     try:
-        response = requests.get(url, timeout=10)
+        response = requests.get(url)
         response.raise_for_status()
         text = response.text
 
@@ -32,16 +33,13 @@ def fetch_and_extract_subpage(url):
 
         return snippet
 
-    except requests.RequestException as e:
-        print(f"网络请求失败 {url}: {e}")
-        return None
     except Exception as e:
-        print(f"处理失败 {url}: {e}")
+        print(f"Failed to fetch {url}: {e}")
         return None
 
 def get_subpage_links(main_page_url):
     try:
-        response = requests.get(main_page_url, timeout=10)
+        response = requests.get(main_page_url)
         response.raise_for_status()
         soup = BeautifulSoup(response.text, 'html.parser')
         links = soup.find_all('a', href=True)
@@ -58,11 +56,8 @@ def get_subpage_links(main_page_url):
         center_start_index = max(0, (num_links - 40) // 2)
         return subpage_links[center_start_index:center_start_index + 40]
 
-    except requests.RequestException as e:
-        print(f"网络请求失败 {main_page_url}: {e}")
-        return []
     except Exception as e:
-        print(f"处理失败 {main_page_url}: {e}")
+        print(f"Failed to fetch main page {main_page_url}: {e}")
         return []
 
 def clean_text(text):
@@ -73,28 +68,22 @@ def clean_text(text):
     return text
 
 def write_file(file_path, text):
-    try:
-        with open(file_path, 'w', encoding='utf-8') as file:
-            file.write(text)
-        print(f"写入文件 {file_path}, 内容长度: {len(text)}")
-    except IOError as e:
-        print(f"文件写入失败 {file_path}: {e}")
+    with open(file_path, 'w', encoding='utf-8') as file:
+        file.write(text)
+    print(f"写入文件 {file_path}, 内容长度: {len(text)}")
 
 def read_file(file_path):
-    try:
-        with open(file_path, 'r', encoding='utf-8') as file:
-            content = file.read()
-        print(f"读取文件 {file_path}, 内容长度: {len(content)}")
-        return content
-    except IOError as e:
-        print(f"文件读取失败 {file_path}: {e}")
-        return ""
+    with open(file_path, 'r', encoding='utf-8') as file:
+        content = file.read()
+    print(f"读取文件 {file_path}, 内容长度: {len(content)}")
+    return content
 
 def extract_data():
     title_pattern = re.compile(r'<h3 class="title">(.*?)<\/h3>', re.DOTALL)
     m3u8_pattern = re.compile(r'https://[^\s"]+\.m3u8')
 
     content = read_file(CLEANED_FILE)
+
     content = content.replace('\\', '')
 
     titles = title_pattern.findall(content)
@@ -123,38 +112,33 @@ def generate_playlist_m3u(titles, m3u8_links):
     
     print(f"\n已生成 {output_m3u_path} 文件，包含 {len(m3u8_links)} 个链接。")
 
-def get_valid_domain():
-    # 扩展域名范围 8260-8299 和 8360-8399
-    possible_domains = [f"http://82{j}ck.cc" for j in range(60, 100)] + [f"http://83{j}ck.cc" for j in range(60, 100)]
-    for domain in possible_domains:
-        main_page_url = f'{domain}/vodtype/9-1.html'
-        print(f"尝试访问 {main_page_url}...")
-
-        try:
-            response = requests.get(main_page_url, timeout=10)
-            if response.status_code == 200 and '/vodtype/' in response.text:
-                print(f"找到有效域名: {domain}")
-                return domain
-        except requests.RequestException as e:
-            print(f"访问 {main_page_url} 失败: {e}")
-    
-    print("没有找到有效的域名。")
-    return None
-
 def main():
     if not os.path.exists('temp_pages'):
         os.makedirs('temp_pages')
 
     # 每次运行前清空文件
-    if os.path.exists(TEMP_FILE):
-        open(TEMP_FILE, 'w').close()
-    if os.path.exists(CLEANED_FILE):
-        open(CLEANED_FILE, 'w').close()
+    open(TEMP_FILE, 'w').close()
+    open(CLEANED_FILE, 'w').close()
 
-    valid_domain = get_valid_domain()
+    # 扩展域名试错范围
+    possible_domains = [f"http://82{j}ck.cc" for j in range(60, 100)] + [f"http://83{j}ck.cc" for j in range(60, 100)]
+    valid_domain = None
+    
+    for domain in possible_domains:
+        main_page_url = f'{domain}/vodtype/9-1.html'
+        print(f"尝试访问 {main_page_url}...")
+        
+        try:
+            response = requests.get(main_page_url)
+            if response.status_code == 200 and '/vodtype/' in response.text:
+                valid_domain = domain
+                print(f"找到有效域名: {domain}")
+                break
+        except requests.RequestException:
+            continue
     
     if not valid_domain:
-        print("没有有效域名，停止运行。")
+        print("没有找到有效的域名。")
         return
 
     # 处理所有页面
@@ -172,7 +156,9 @@ def main():
         for url in subpage_links:
             snippet = fetch_and_extract_subpage(url)
             if snippet:
-                write_file(TEMP_FILE, snippet + "\n" + "="*80 + "\n")
+                with open(TEMP_FILE, 'a', encoding='utf-8') as file:
+                    file.write(snippet)
+                    file.write("\n" + "="*80 + "\n")
 
     print(f"数据已从子页面保存到 {TEMP_FILE}。")
 
