@@ -28,7 +28,7 @@ jobs:
 
     - name: Clean up old specific M3U files
       run: |
-        find scripts/aaa -type f -name 'playlistw.m3u' -exec rm -f {} +
+        find scripts/aaa -type f -name 'playlisty.m3u' -exec rm -f {} +
 
     - name: Run script
       run: |
