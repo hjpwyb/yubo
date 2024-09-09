@@ -38,3 +38,13 @@ jobs:
     - name: Check for generated files
       run: |
         ls -la scripts/aaa/  # 列出目录中的所有文件，确认文件生成情况
+    - name: Commit and push changes
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+       git config --global user.name 'github-actions'
+       git config --global user.email 'github-actions@github.com'
+       git config --global --add safe.directory /github/workspace
+       git add scripts/aaa/combined1.txt scripts/aaa/cleaned_combined1.txt scripts/aaa/playlisty.m3u  # 确保添加文件
+       git commit -m "Update M3U files" || echo "No changes to commit"
+       git push || echo "Nothing to
