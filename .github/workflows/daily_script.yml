@@ -1,0 +1,33 @@
+name: Daily Script Execution
+
+on:
+  schedule:
+    - cron: '20 0 * * *'  # 每天的0:20运行
+
+jobs:
+  run-daily-script:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Clean environment files
+        run: |
+          rm -f scripts/aaa/combined1.txt
+          rm -f scripts/aaa/cleaned_combined1.txt
+          rm -f playlisty.m3u
+        shell: bash
+
+      - name: Run Python script
+        run: python scripts/aaa/test1.py
