@@ -37,6 +37,11 @@ jobs:
       run: |
         ls -la scripts/aaa/
 
+    - name: Check for changes
+      run: |
+        git status
+        git diff --name-only
+
     - name: Commit and push changes
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
