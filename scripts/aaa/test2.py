@@ -120,7 +120,7 @@ def main():
     open(CLEANED_FILE, 'w').close()
 
     # 扩展域名试错范围
-    possible_domains = [f"http://87{j}ck.cc" for j in range(10, 60)] + [f"http://87{j}ck.cc" for j in range(60, 100)]
+    possible_domains = [f"http://87{j}ck.cc" for j in range(20, 60)] + [f"http://87{j}ck.cc" for j in range(60, 100)]
     valid_domain = None
     
     for domain in possible_domains:
