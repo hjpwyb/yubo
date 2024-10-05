@@ -3,17 +3,12 @@ import re
 import requests
 from urllib.parse import urlparse, urljoin
 from bs4 import BeautifulSoup
-import time
 
 # 配置文件路径
 TEMP_FILE = 'scripts/aaa/combined.txt'
 CLEANED_FILE = 'scripts/aaa/cleaned_combined.txt'
 OUTPUT_M3U_FILE = 'playlistw.m3u'  # 修改为 playlisty.m3u
 OUTPUT_DIR = 'scripts/aaa'  # 指定输出目录
-
-# 如果输出目录不存在，则创建
-if not os.path.exists(OUTPUT_DIR):
-    os.makedirs(OUTPUT_DIR)
 
 def extract_domain(url):
     try:
@@ -74,59 +69,58 @@ def clean_text(text):
 def write_file(file_path, text):
     with open(file_path, 'w', encoding='utf-8') as file:
         file.write(text)
+    print(f"写入文件 {file_path}, 内容长度: {len(text)}")
 
 def read_file(file_path):
     with open(file_path, 'r', encoding='utf-8') as file:
         content = file.read()
+    print(f"读取文件 {file_path}, 内容长度: {len(content)}")
     return content
 
 def extract_data():
     title_pattern = re.compile(r'<h3 class="title">(.*?)<\/h3>', re.DOTALL)
     m3u8_pattern = re.compile(r'https://[^\s"]+\.m3u8')
 
-    with open(CLEANED_FILE, 'r', encoding='utf-8') as file:
-        content = file.read()
+    content = read_file(CLEANED_FILE)
 
     content = content.replace('\\', '')
 
     titles = title_pattern.findall(content)
     m3u8_links = m3u8_pattern.findall(content)
 
+    print(f"提取到的标题数量: {len(titles)}")
+    print(f"提取到的 m3u8 链接数量: {len(m3u8_links)}")
+
     return titles, m3u8_links
 
-def sanitize_filename(filename):
-    """清理文件名，避免非法字符"""
-    return "".join([c if c.isalnum() or c in ' _-' else '_' for c in filename])
+def generate_playlist_m3u(titles, m3u8_links):
+    if not os.path.exists(OUTPUT_DIR):
+        os.makedirs(OUTPUT_DIR)
 
-def create_m3u_file(title, m3u8_url):
-    """为每个m3u8链接创建一个m3u文件，并覆盖已有文件"""
-    m3u_filename = sanitize_filename(title) + '.m3u'
-    m3u_filepath = os.path.join(OUTPUT_DIR, m3u_filename)
-
-    with open(m3u_filepath, 'w') as m3u_file:
-        m3u_file.write("#EXTM3U\n")
-        m3u_file.write(f'#EXTINF:-1,{title}\n')
-        m3u_file.write(f'{m3u8_url}\n')
-
-    # 更新文件的修改时间为当前时间
-    current_time = time.time()
-    os.utime(m3u_filepath, (current_time, current_time))
-
-    print(f"m3u 文件已创建并更新: {m3u_filepath}")
-
-def generate_m3u_files(titles, m3u8_links):
-    for title, link in zip(titles, m3u8_links):
-        create_m3u_file(title, link)
+    output_m3u_path = os.path.join(OUTPUT_DIR, OUTPUT_M3U_FILE)
     
-    print(f"\n已生成 {len(m3u8_links)} 个 m3u 文件。")
+    # 每次运行时删除旧的 playlisty.m3u 文件
+    if os.path.exists(output_m3u_path):
+        os.remove(output_m3u_path)
+    
+    # 生成新的 playlisty.m3u 文件
+    with open(output_m3u_path, 'w', encoding='utf-8') as m3u_file:
+        m3u_file.write('#EXTM3U\n')
+        for title, link in zip(titles, m3u8_links):
+            m3u_file.write(f"#EXTINF:-1,{title}\n{link}\n")
+    
+    print(f"\n已生成 {output_m3u_path} 文件，包含 {len(m3u8_links)} 个链接。")
 
 def main():
+    if not os.path.exists('temp_pages'):
+        os.makedirs('temp_pages')
+
     # 每次运行前清空文件
     open(TEMP_FILE, 'w').close()
     open(CLEANED_FILE, 'w').close()
 
     # 扩展域名试错范围
-    possible_domains = [f"http://87{j}ck.cc" for j in range(60, 90)] + [f"http://87{j}ck.cc" for j in range(91, 100)]
+    possible_domains = [f"http://87{j}ck.cc" for j in range(60, 80)] + [f"http://87{j}ck.cc" for j in range(80, 100)]
     valid_domain = None
     
     for domain in possible_domains:
@@ -189,7 +183,7 @@ def main():
     if len(titles) != len(m3u8_links):
         print("警告: 标题和 m3u8 链接数量不匹配！")
     
-    generate_m3u_files(titles, m3u8_links)
+    generate_playlist_m3u(titles, m3u8_links)
 
 if __name__ == "__main__":
     main()
