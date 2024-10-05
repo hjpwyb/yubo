@@ -22,7 +22,6 @@ dns:
     - tls://1.0.0.1:853
     - tls://dns.google:853
 proxies:
-  - {"type":"vless","name":"HK_1","server":"27.50.49.247","port":8443,"uuid":"90cd4a77-141a-43c9-991b-08263cfe9c10","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"tlsjiedian.linyubo216.filegear-sg.me","ws-opts":{"path":"/?ed=2560","headers":{"host":"tlsjiedian.linyubo216.filegear-sg.me"}}}
   - {"type":"vless","name":"HK_2","server":"27.50.49.62","port":443,"uuid":"90cd4a77-141a-43c9-991b-08263cfe9c10","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"tlsjiedian.linyubo216.filegear-sg.me","ws-opts":{"path":"/?ed=2560","headers":{"host":"tlsjiedian.linyubo216.filegear-sg.me"}}}
   - {"type":"vless","name":"HK_3","server":"27.50.49.122","port":2053,"uuid":"90cd4a77-141a-43c9-991b-08263cfe9c10","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"tlsjiedian.linyubo216.filegear-sg.me","ws-opts":{"path":"/?ed=2560","headers":{"host":"tlsjiedian.linyubo216.filegear-sg.me"}}}
   - {"type":"vless","name":"HK_4","server":"27.50.49.61","port":2053,"uuid":"90cd4a77-141a-43c9-991b-08263cfe9c10","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"tlsjiedian.linyubo216.filegear-sg.me","ws-opts":{"path":"/?ed=2560","headers":{"host":"tlsjiedian.linyubo216.filegear-sg.me"}}}
