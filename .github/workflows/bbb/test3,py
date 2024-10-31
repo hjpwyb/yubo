@@ -1,0 +1,54 @@
+name: Generate and Merge M3U Files
+
+on:
+  schedule:
+    - cron: '0 17 * * *'  # 每天 UTC 时间 17:00 运行（可调整）
+  workflow_dispatch:  # 支持手动触发
+
+jobs:
+  generate-and-merge:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.9'
+      
+      - name: Install dependencies
+        run: |
+          pip install requests beautifulsoup4
+
+      - name: Delete old M3U files
+        run: rm -f scripts/bbb/*.m3u
+
+      - name: Run Python script
+        run: python scripts/bbb/test3.py
+
+      - name: Merge M3U files
+        run: |
+          echo "#EXTM3U" > scripts/bbb/merged.m3u
+          for file in scripts/bbb/*.m3u; do
+            cat "$file" >> scripts/bbb/merged.m3u
+            echo "\n# --- End of Episode ---\n" >> scripts/bbb/merged.m3u
+          done
+
+      - name: Force update file timestamps
+        run: touch scripts/bbb/*.m3u
+
+      - name: Check for generated files
+        run: ls -la scripts/bbb/
+
+      - name: Configure Git
+        run: |
+          git config --global user.name 'github-actions'
+          git config --global user.email 'github-actions@github.com'
+
+      - name: Commit and push changes
+        run: |
+          git add scripts/bbb/merged.m3u
+          git commit -m "Update merged M3U file" || echo "No changes to commit"
+          git push || echo "Nothing to push"
