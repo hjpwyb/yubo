@@ -108,13 +108,18 @@ def merge_m3u_files(folder_path):
         output_file.write("#EXTM3U\n")
         for file in os.listdir(folder_path):
             if file.endswith('.m3u'):
-                output_file.write(f"# {file.replace('.m3u', '')}\n")  # 添加剧集标题
                 with open(os.path.join(folder_path, file), 'r') as input_file:
                     lines = input_file.readlines()
                     for line in lines:
-                        output_file.write(line)
-                    # 添加分隔符
-                    output_file.write("\n# --- End of Episode ---\n")
+                        if line.startswith("#EXTINF:"):
+                            # 提取标题
+                            title = line.split(',', 1)[1].strip()
+                            output_file.write(line)  # 写入集的标题
+                        else:
+                            output_file.write(line)  # 写入链接
+                    # 添加分隔符，确保格式正确
+                    output_file.write(f"#EXTINF:-1,# --- End of Episode for {title} ---\n")
+                    output_file.write("# --- End of Episode ---\n")  # 也可以单独写分隔符
     print(f"M3U 文件已合并到 {output_file_path}")
 
 # 主函数
