@@ -108,6 +108,7 @@ def merge_m3u_files(folder_path):
         output_file.write("#EXTM3U\n")
         for file in os.listdir(folder_path):
             if file.endswith('.m3u'):
+                output_file.write(f"# {file.replace('.m3u', '')}\n")  # 添加剧集标题
                 with open(os.path.join(folder_path, file), 'r') as input_file:
                     lines = input_file.readlines()
                     for line in lines:
