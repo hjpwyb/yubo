@@ -107,6 +107,7 @@ def merge_m3u_files(folder_path):
                     # 添加分隔符和假链接
                     output_file.write("#EXTINF:-1, --- End of Episode ---\n")
                     output_file.write("https://dummy-link-for-end-of-episode.com\n")  # 假链接
+                    output_file.write("https://dummy-link-for-end-of-episode.com\n")  # 假链接
     print(f"M3U 文件已合并到 {output_file_path}")
 
 # 主函数
