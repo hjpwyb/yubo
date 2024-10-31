@@ -105,7 +105,7 @@ def save_all_m3u8_links_to_file(folder_path, filename, all_m3u8_links):
 # 主函数
 def main():
     # 删除旧的 .m3u 文件
-    folder_path = 'scripts/bbb'  # 指定你要保存文件的文件夹路径
+    folder_path = 'scripts/ccc'  # 指定你要保存文件的文件夹路径
     delete_old_m3u_files(folder_path)
     
     # 更新后的页面链接
