@@ -86,13 +86,11 @@ def save_m3u8_links_to_file(folder_path, title, m3u8_links):
         file.write("#EXTM3U\n")
         for episode_title, link in m3u8_links:
             cleaned_title = episode_title.split('$')[0]  # 处理标题，移除特殊符号
-            file.write(f"#EXTINF:-1,{cleaned_title}\n")
+            file.write(f"#EXTINF:-1,{cleaned_title}\n")  # 将标题直接写在 EXTINF 后面
             file.write(f"{link}\n")
-    
+        
         # 添加结束标记
-        file.write("#EXTINF:-1, --- End of Episode ---\n")
-
-    print(f"M3U8 链接已成功写入 {file_path} 文件中")
+        file.write("#EXTINF:-1, --- End of Episode ---\n")  # 结束标记不加 #
 
 # 合并 M3U 文件
 def merge_m3u_files(folder_path):
@@ -101,12 +99,12 @@ def merge_m3u_files(folder_path):
         output_file.write("#EXTM3U\n")
         for file in os.listdir(folder_path):
             if file.endswith('.m3u'):
-                output_file.write(f"# {file.replace('.m3u', '')}\n")  # 添加剧集标题
+                output_file.write(f"#EXTINF:-1,{file.replace('.m3u', '')}\n")  # 添加剧集标题
                 with open(os.path.join(folder_path, file), 'r', encoding='utf-8') as input_file:
                     lines = input_file.readlines()
                     output_file.writelines(lines)
                     # 添加分隔符
-                    output_file.write("\n# --- End of Episode ---\n")
+                    output_file.write("#EXTINF:-1, --- End of Episode ---\n")  # 结束标记不加 #
     print(f"M3U 文件已合并到 {output_file_path}")
 
 # 主函数
