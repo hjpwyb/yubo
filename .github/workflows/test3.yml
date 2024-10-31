@@ -23,10 +23,10 @@ jobs:
           pip install requests beautifulsoup4
 
       - name: Delete old M3U files
-        run: rm -f scripts/bbb/*.m3u
+        run: rm -f scripts/ccc/*.m3u
 
       - name: Run Python script
-        run: python scripts/bbb/test3.py
+        run: python scripts/ccc/test3.py
 
       - name: Merge M3U files
         run: |
