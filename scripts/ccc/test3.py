@@ -89,8 +89,9 @@ def save_m3u8_links_to_file(folder_path, title, m3u8_links):
             file.write(f"#EXTINF:-1,{cleaned_title}\n")  # 将标题直接写在 EXTINF 后面
             file.write(f"{link}\n")
         
-        # 添加结束标记
-        file.write("#EXTINF:-1, --- End of Episode ---\n")  # 结束标记不加 #
+        # 添加结束标记和假链接
+        file.write("#EXTINF:-1, --- End of Episode ---\n")
+        file.write("https://dummy-link-for-end-of-episode.com\n")  # 假链接
 
 # 合并 M3U 文件
 def merge_m3u_files(folder_path):
@@ -103,8 +104,9 @@ def merge_m3u_files(folder_path):
                 with open(os.path.join(folder_path, file), 'r', encoding='utf-8') as input_file:
                     lines = input_file.readlines()
                     output_file.writelines(lines)
-                    # 添加分隔符
-                    output_file.write("#EXTINF:-1, --- End of Episode ---\n")  # 结束标记不加 #
+                    # 添加分隔符和假链接
+                    output_file.write("#EXTINF:-1, --- End of Episode ---\n")
+                    output_file.write("https://dummy-link-for-end-of-episode.com\n")  # 假链接
     print(f"M3U 文件已合并到 {output_file_path}")
 
 # 主函数
