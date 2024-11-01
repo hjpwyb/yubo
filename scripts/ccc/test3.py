@@ -1,7 +1,6 @@
 import os
 import requests
 from bs4 import BeautifulSoup
-import re
 import random
 
 # 删除指定文件夹中的所有 .m3u 文件
@@ -90,10 +89,6 @@ def save_m3u8_links_to_file(folder_path, title, m3u8_links):
         for episode_title, link in m3u8_links:
             file.write(f"#EXTINF:-1,{episode_title}\n")
             file.write(f"{link}\n")  # 每个标题后都有对应链接
-    
-        # 添加结束标记，确保下一行有假链接
-        file.write("#EXTINF:-1, --- End of Episode ---\n")
-        file.write("http://example.com/fake-link-for-end-of-episode\n")  # 假链接
 
     print(f"M3U8 链接已成功写入 {file_path} 文件中")
 
@@ -108,9 +103,6 @@ def merge_m3u_files(folder_path):
                 with open(os.path.join(folder_path, file), 'r', encoding='utf-8') as input_file:
                     lines = input_file.readlines()
                     output_file.writelines(lines)
-                    # 添加分隔符，确保下一行有链接
-                    output_file.write("#EXTINF:-1, --- End of Episode ---\n")
-                    output_file.write("http://example.com/fake-link-for-end-of-episode\n")  # 假链接
     print(f"M3U 文件已合并到 {output_file_path}")
 
 # 主函数
