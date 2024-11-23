@@ -9,6 +9,7 @@ TEMP_FILE = 'scripts/aaa/combined.txt'
 CLEANED_FILE = 'scripts/aaa/cleaned_combined.txt'
 OUTPUT_M3U_FILE = 'playlistw.m3u'  # 修改为 playlisty.m3u
 OUTPUT_DIR = 'scripts/aaa'  # 指定输出目录
+LAST_VALID_DOMAIN_FILE = 'scripts/aaa/last_valid_domain.txt'  # 用于记录上次有效的域名数字
 
 def extract_domain(url):
     try:
@@ -111,6 +112,16 @@ def generate_playlist_m3u(titles, m3u8_links):
     
     print(f"\n已生成 {output_m3u_path} 文件，包含 {len(m3u8_links)} 个链接。")
 
+def get_last_valid_domain():
+    if os.path.exists(LAST_VALID_DOMAIN_FILE):
+        with open(LAST_VALID_DOMAIN_FILE, 'r', encoding='utf-8') as file:
+            return int(file.read().strip())
+    return 7000  # 默认从7000开始
+
+def set_last_valid_domain(domain_number):
+    with open(LAST_VALID_DOMAIN_FILE, 'w', encoding='utf-8') as file:
+        file.write(str(domain_number))
+
 def main():
     if not os.path.exists('temp_pages'):
         os.makedirs('temp_pages')
@@ -119,8 +130,11 @@ def main():
     open(TEMP_FILE, 'w').close()
     open(CLEANED_FILE, 'w').close()
 
-    # 扩展域名试错范围
-    possible_domains = [f"http://75{j}ck.cc" for j in range(10, 80)] + [f"http://76{j}ck.cc" for j in range(80, 100)]
+    # 获取上次有效域名的数字
+    last_valid_number = get_last_valid_domain()
+
+    # 扩展域名试错范围，从上次有效的数字开始
+    possible_domains = [f"http://75{j}ck.cc" for j in range(last_valid_number, 80)] + [f"http://76{j}ck.cc" for j in range(80, 100)]
     valid_domain = None
     
     for domain in possible_domains:
@@ -132,6 +146,7 @@ def main():
             if response.status_code == 200 and '/vodtype/' in response.text:
                 valid_domain = domain
                 print(f"找到有效域名: {domain}")
+                set_last_valid_domain(int(domain[4:8]))  # 记录有效的域名数字
                 break
         except requests.RequestException:
             continue
@@ -181,9 +196,10 @@ def main():
         return
     
     if len(titles) != len(m3u8_links):
-        print("警告: 标题和 m3u8 链接数量不匹配！")
-    
+        print(f"警告: 标题数量({len(titles)})与 m3u8 链接数量({len(m3u8_links)})不匹配。")
+
+    print("正在生成 m3u 文件...")
     generate_playlist_m3u(titles, m3u8_links)
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()
