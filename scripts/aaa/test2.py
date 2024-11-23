@@ -134,19 +134,22 @@ def main():
     last_valid_number = get_last_valid_domain()
 
     # 扩展域名试错范围，从上次有效的数字开始
-    possible_domains = [f"http://75{j}ck.cc" for j in range(last_valid_number, 80)] + [f"http://76{j}ck.cc" for j in range(80, 100)]
+    base_domain = "7"
+    start_num = 7000
+    end_num = 7999
     valid_domain = None
     
-    for domain in possible_domains:
+    for num in range(start_num, end_num + 1):
+        domain = f"http://{base_domain}{num}ck.cc"
         main_page_url = f'{domain}/vodtype/8-1.html'
         print(f"尝试访问 {main_page_url}...")
-        
+
         try:
             response = requests.get(main_page_url)
             if response.status_code == 200 and '/vodtype/' in response.text:
                 valid_domain = domain
                 print(f"找到有效域名: {domain}")
-                set_last_valid_domain(int(domain[4:8]))  # 记录有效的域名数字
+                set_last_valid_domain(num)  # 记录有效的域名数字
                 break
         except requests.RequestException:
             continue
@@ -198,7 +201,7 @@ def main():
     if len(titles) != len(m3u8_links):
         print(f"警告: 标题数量({len(titles)})与 m3u8 链接数量({len(m3u8_links)})不匹配。")
 
-    print("正在生成 m3u 文件...")
+    print("正在生成 M3U 播放列表文件...")
     generate_playlist_m3u(titles, m3u8_links)
 
 if __name__ == '__main__':
