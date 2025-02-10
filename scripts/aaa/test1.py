@@ -142,7 +142,7 @@ def main():
         return
 
     # 处理所有页面
-    for i in range(1, 6):
+    for i in range(1, 51):
         main_page_url = f'{valid_domain}/vodtype/9-{i}.html'
         print(f"处理页面: {main_page_url}")
         
