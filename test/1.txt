@@ -1,1 +1,88 @@
-111
+
+
+https://yubou.us.kg/https://raw.githubusercontent.com/hjpwyb/collect-tv-txt/refs/heads/main/live.m3u 
+
+https://yubou.us.kg/https://raw.githubusercontent.com/hjpwyb/collect-tv-txt/refs/heads/main/live.txt
+
+https://linyubo214.filegear-sg.me/live.m3u
+
+https://linyubo214.filegear-sg.me/live.txt
+
+https://yubou.us.kg/https://raw.githubusercontent.com/yuanzl77/IPTV/refs/heads/main/live.txt
+
+https://notabug.org/samhorse/c/src/87138458fdcc2fa0e378c619bc4c3fba7c1281c7/port/tvblive.txt
+
+https://raw.githubusercontent.com/Guovin/iptv-api/gd/output/result.m3u
+
+https://raw.githubusercontent.com/Guovin/iptv-api/gd/output/result.txt
+或
+
+https://cdn.jsdelivr.net/gh/Guovin/iptv-api@gd/output/result.m3u
+
+https://cdn.jsdelivr.net/gh/Guovin/iptv-api@gd/output/result.txt
+
+
+http://192.168.0.109:5000/webman/3rdparty/Allinone/m3utotxt.cgi?m3u_url=http://localhost:35455/tv.m3u
+
+https://ghp.ci/https://raw.githubusercontent.com/hjpwyb/TvBox11/refs/heads/main/yubo.txt
+
+https://ghp.ci/https://raw.githubusercontent.com/hjpwyb/TvBox11/refs/heads/main/live.m3u
+
+https://ghp.ci/https://raw.githubusercontent.com/hjpwyb/TvBox11/refs/heads/main/live.txt
+
+https://ghp.ci/https://raw.githubusercontent.com/hjpwyb/IPTV1/refs/heads/main/live.m3u
+
+https://ghp.ci/https://raw.githubusercontent.com/hjpwyb/yubo/refs/heads/main/scripts/ccc/merged.m3u
+
+https://ghp.ci/https://raw.githubusercontent.com/hjpwyb/IPTV4/refs/heads/main/live.m3u
+
+https://ghp.ci/https://raw.githubusercontent.com/hjpwyb/IPTV4/refs/heads/main/live.txt
+
+https://ghp.ci/https://raw.githubusercontent.com/hjpwyb/zubo/refs/heads/main/live.txt
+
+https://ghp.ci/https://raw.githubusercontent.com/hjpwyb/zubo/refs/heads/main/live.m3u
+
+https://ghp.ci/https://raw.githubusercontent.com/wokaotianshi123/zubotv/refs/heads/main/chongqingzubo.txt
+
+https://ghp.ci/https://raw.githubusercontent.com/hjpwyb/WYB/refs/heads/main/data/test/tv.txt
+
+http://192.168.136.128:5666/
+
+192.168.136.2 
+
+/vol1
+
+
+
+
+
+正在进行代理测速，为您选择最佳代理……
+[INFO] docker.io代理点测速中……
+[INFO] docker.io代理测试失败，将继续测试下一代理点！
+[INFO] hub.rat.dev代理点测速中……
+[INFO] hub.rat.dev代理可用，测试完成！
+[INFO] nas.dockerimages.us.kg代理点测速中……
+[INFO] nas.dockerimages.us.kg代理可用，测试完成！
+[INFO] dockerhub.ggbox.us.kg代理点测速中……
+[INFO] dockerhub.ggbox.us.kg代理可用，测试完成！
+[INFO] docker.aidenxin.xyz代理点测速中……
+[INFO] docker.aidenxin.xyz代理可用，测试完成！
+[INFO] dockerhub.anzu.vip代理点测速中……
+[INFO] dockerhub.anzu.vip代理可用，测试完成！
+[INFO] docker.1panel.live代理点测速中……
+[INFO] docker.1panel.live代理可用，测试完成！
+[INFO] docker.nastool.de代理点测速中……
+[INFO] docker.nastool.de代理测试失败，将继续测试下一代理点！
+[INFO] docker.adysec.com代理点测速中……
+[INFO] docker.adysec.com代理可用，测试完成！
+已为您选取两个最佳代理点并添加到了/vol1/1000/g-box/docker_mirrors.txt文件中：
+hub.rat.dev
+nas.dockerimages.us.kg
+代理测速用时：2 分 38 秒
+
+
+
+
+
+
+
