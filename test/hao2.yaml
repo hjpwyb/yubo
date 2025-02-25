@@ -1,0 +1,1502 @@
+#
+#-------------------------------------------------------------#
+#  创建者：https://v2rayse.com
+#  创建时间：2025-02-21 11:12:57
+#  模版：ACL4SSR_Online_Full_MultiMode
+#  节点数量：240
+#-------------------------------------------------------------#
+#
+mixed-port: 7890
+allow-lan: true
+mode: Rule
+log-level: info
+external-controller: 0.0.0.0:9090
+dns:
+  enabled: true
+  nameserver:
+    - 119.29.29.29
+    - 223.5.5.5
+  fallback:
+    - 8.8.8.8
+    - 8.8.4.4
+    - tls://1.0.0.1:853
+    - tls://dns.google:853
+proxies:
+  - {"type":"vless","name":"hao2_1","server":"154.92.9.18","port":443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_2","server":"154.92.9.51","port":443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_3","server":"154.92.9.179","port":443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_4","server":"154.92.9.34","port":443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_5","server":"154.92.9.30","port":443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_6","server":"154.92.9.246","port":443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_7","server":"154.92.9.47","port":443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_8","server":"154.92.9.90","port":443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_9","server":"154.92.9.73","port":443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_10","server":"154.92.9.144","port":443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_11","server":"154.92.9.59","port":443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_12","server":"154.92.9.223","port":443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_13","server":"154.92.9.240","port":443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_14","server":"154.92.9.165","port":443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_15","server":"154.92.9.62","port":443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_16","server":"154.92.9.107","port":443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_17","server":"154.92.9.26","port":443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_18","server":"154.92.9.86","port":443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_19","server":"154.92.9.230","port":443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_20","server":"154.92.9.148","port":443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_21","server":"154.92.9.21","port":443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_22","server":"154.92.9.125","port":443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_23","server":"154.92.9.167","port":443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_24","server":"154.92.9.206","port":443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_25","server":"154.92.9.234","port":443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_26","server":"154.92.9.141","port":443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_27","server":"154.92.9.238","port":443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_28","server":"154.92.9.139","port":443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_29","server":"154.92.9.232","port":443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_30","server":"154.92.9.19","port":443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_31","server":"154.92.9.97","port":443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_32","server":"154.92.9.38","port":443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_33","server":"154.92.9.48","port":443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_34","server":"154.92.9.159","port":443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_35","server":"154.92.9.83","port":443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_36","server":"154.92.9.60","port":443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_37","server":"154.92.9.12","port":443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_38","server":"154.92.9.35","port":443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_39","server":"154.92.9.1","port":443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_40","server":"154.92.9.66","port":443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_41","server":"154.92.9.183","port":443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_42","server":"154.92.9.50","port":443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_43","server":"154.92.9.228","port":443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_44","server":"154.92.9.103","port":443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_45","server":"154.92.9.104","port":443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_46","server":"154.92.9.249","port":443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_47","server":"154.92.9.37","port":443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_48","server":"154.92.9.129","port":443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_49","server":"154.92.9.43","port":443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_50","server":"154.92.9.132","port":443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_51","server":"154.92.9.46","port":443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_52","server":"154.92.9.108","port":443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_53","server":"154.92.9.95","port":443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_54","server":"154.92.9.58","port":443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_55","server":"154.92.9.92","port":443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_56","server":"154.92.9.57","port":443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_57","server":"154.92.9.182","port":443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_58","server":"154.92.9.36","port":443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_59","server":"154.92.9.121","port":443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_60","server":"154.92.9.4","port":443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_61","server":"154.92.9.32","port":443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_62","server":"154.92.9.195","port":443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_63","server":"154.92.9.176","port":443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_64","server":"154.92.9.200","port":443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_65","server":"154.92.9.193","port":443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_66","server":"154.92.9.168","port":443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_67","server":"154.92.9.110","port":443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_68","server":"154.92.9.180","port":443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_69","server":"154.92.9.78","port":443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_70","server":"154.92.9.218","port":443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_71","server":"154.92.9.205","port":443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_72","server":"154.92.9.161","port":443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_73","server":"154.92.9.41","port":443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_74","server":"154.92.9.226","port":443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_75","server":"154.92.9.79","port":443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_76","server":"154.92.9.6","port":443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_77","server":"154.92.9.247","port":443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_78","server":"154.92.9.75","port":443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_79","server":"154.92.9.0","port":443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_80","server":"154.92.9.213","port":443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_81","server":"154.92.9.18","port":8443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_82","server":"154.92.9.51","port":8443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_83","server":"154.92.9.179","port":8443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_84","server":"154.92.9.34","port":8443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_85","server":"154.92.9.30","port":8443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_86","server":"154.92.9.246","port":8443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_87","server":"154.92.9.47","port":8443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_88","server":"154.92.9.90","port":8443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_89","server":"154.92.9.73","port":8443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_90","server":"154.92.9.144","port":8443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_91","server":"154.92.9.59","port":8443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_92","server":"154.92.9.223","port":8443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_93","server":"154.92.9.240","port":8443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_94","server":"154.92.9.165","port":8443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_95","server":"154.92.9.62","port":8443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_96","server":"154.92.9.107","port":8443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_97","server":"154.92.9.26","port":8443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_98","server":"154.92.9.86","port":8443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_99","server":"154.92.9.230","port":8443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_100","server":"154.92.9.148","port":8443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_101","server":"154.92.9.21","port":8443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_102","server":"154.92.9.125","port":8443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_103","server":"154.92.9.167","port":8443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_104","server":"154.92.9.206","port":8443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_105","server":"154.92.9.234","port":8443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_106","server":"154.92.9.141","port":8443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_107","server":"154.92.9.238","port":8443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_108","server":"154.92.9.139","port":8443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_109","server":"154.92.9.232","port":8443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_110","server":"154.92.9.19","port":8443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_111","server":"154.92.9.97","port":8443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_112","server":"154.92.9.38","port":8443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_113","server":"154.92.9.48","port":8443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_114","server":"154.92.9.159","port":8443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_115","server":"154.92.9.83","port":8443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_116","server":"154.92.9.60","port":8443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_117","server":"154.92.9.12","port":8443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_118","server":"154.92.9.35","port":8443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_119","server":"154.92.9.1","port":8443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_120","server":"154.92.9.66","port":8443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_121","server":"154.92.9.183","port":8443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_122","server":"154.92.9.50","port":8443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_123","server":"154.92.9.228","port":8443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_124","server":"154.92.9.103","port":8443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_125","server":"154.92.9.104","port":8443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_126","server":"154.92.9.249","port":8443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_127","server":"154.92.9.37","port":8443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_128","server":"154.92.9.129","port":8443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_129","server":"154.92.9.43","port":8443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_130","server":"154.92.9.132","port":8443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_131","server":"154.92.9.46","port":8443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_132","server":"154.92.9.108","port":8443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_133","server":"154.92.9.95","port":8443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_134","server":"154.92.9.58","port":8443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_135","server":"154.92.9.92","port":8443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_136","server":"154.92.9.57","port":8443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_137","server":"154.92.9.182","port":8443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_138","server":"154.92.9.36","port":8443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_139","server":"154.92.9.121","port":8443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_140","server":"154.92.9.4","port":8443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_141","server":"154.92.9.32","port":8443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_142","server":"154.92.9.195","port":8443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_143","server":"154.92.9.176","port":8443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_144","server":"154.92.9.200","port":8443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_145","server":"154.92.9.193","port":8443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_146","server":"154.92.9.168","port":8443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_147","server":"154.92.9.110","port":8443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_148","server":"154.92.9.180","port":8443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_149","server":"154.92.9.78","port":8443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_150","server":"154.92.9.218","port":8443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_151","server":"154.92.9.205","port":8443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_152","server":"154.92.9.161","port":8443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_153","server":"154.92.9.41","port":8443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_154","server":"154.92.9.226","port":8443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_155","server":"154.92.9.79","port":8443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_156","server":"154.92.9.6","port":8443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_157","server":"154.92.9.247","port":8443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_158","server":"154.92.9.75","port":8443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_159","server":"154.92.9.0","port":8443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_160","server":"154.92.9.213","port":8443,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_161","server":"154.92.9.18","port":2053,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_162","server":"154.92.9.51","port":2053,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_163","server":"154.92.9.179","port":2053,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_164","server":"154.92.9.34","port":2053,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_165","server":"154.92.9.30","port":2053,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_166","server":"154.92.9.246","port":2053,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_167","server":"154.92.9.47","port":2053,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_168","server":"154.92.9.90","port":2053,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_169","server":"154.92.9.73","port":2053,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_170","server":"154.92.9.144","port":2053,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_171","server":"154.92.9.59","port":2053,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_172","server":"154.92.9.223","port":2053,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_173","server":"154.92.9.240","port":2053,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_174","server":"154.92.9.165","port":2053,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_175","server":"154.92.9.62","port":2053,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_176","server":"154.92.9.107","port":2053,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_177","server":"154.92.9.26","port":2053,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_178","server":"154.92.9.86","port":2053,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_179","server":"154.92.9.230","port":2053,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_180","server":"154.92.9.148","port":2053,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_181","server":"154.92.9.21","port":2053,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_182","server":"154.92.9.125","port":2053,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_183","server":"154.92.9.167","port":2053,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_184","server":"154.92.9.206","port":2053,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_185","server":"154.92.9.234","port":2053,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_186","server":"154.92.9.141","port":2053,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_187","server":"154.92.9.238","port":2053,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_188","server":"154.92.9.139","port":2053,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_189","server":"154.92.9.232","port":2053,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_190","server":"154.92.9.19","port":2053,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_191","server":"154.92.9.97","port":2053,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_192","server":"154.92.9.38","port":2053,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_193","server":"154.92.9.48","port":2053,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_194","server":"154.92.9.159","port":2053,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_195","server":"154.92.9.83","port":2053,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_196","server":"154.92.9.60","port":2053,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_197","server":"154.92.9.12","port":2053,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_198","server":"154.92.9.35","port":2053,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_199","server":"154.92.9.1","port":2053,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_200","server":"154.92.9.66","port":2053,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_201","server":"154.92.9.183","port":2053,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_202","server":"154.92.9.50","port":2053,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_203","server":"154.92.9.228","port":2053,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_204","server":"154.92.9.103","port":2053,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_205","server":"154.92.9.104","port":2053,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_206","server":"154.92.9.249","port":2053,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_207","server":"154.92.9.37","port":2053,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_208","server":"154.92.9.129","port":2053,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_209","server":"154.92.9.43","port":2053,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_210","server":"154.92.9.132","port":2053,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_211","server":"154.92.9.46","port":2053,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_212","server":"154.92.9.108","port":2053,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_213","server":"154.92.9.95","port":2053,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_214","server":"154.92.9.58","port":2053,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_215","server":"154.92.9.92","port":2053,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_216","server":"154.92.9.57","port":2053,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_217","server":"154.92.9.182","port":2053,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_218","server":"154.92.9.36","port":2053,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_219","server":"154.92.9.121","port":2053,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_220","server":"154.92.9.4","port":2053,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_221","server":"154.92.9.32","port":2053,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_222","server":"154.92.9.195","port":2053,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_223","server":"154.92.9.176","port":2053,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_224","server":"154.92.9.200","port":2053,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_225","server":"154.92.9.193","port":2053,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_226","server":"154.92.9.168","port":2053,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_227","server":"154.92.9.110","port":2053,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_228","server":"154.92.9.180","port":2053,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_229","server":"154.92.9.78","port":2053,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_230","server":"154.92.9.218","port":2053,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_231","server":"154.92.9.205","port":2053,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_232","server":"154.92.9.161","port":2053,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_233","server":"154.92.9.41","port":2053,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_234","server":"154.92.9.226","port":2053,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_235","server":"154.92.9.79","port":2053,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_236","server":"154.92.9.6","port":2053,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_237","server":"154.92.9.247","port":2053,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_238","server":"154.92.9.75","port":2053,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_239","server":"154.92.9.0","port":2053,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+  - {"type":"vless","name":"hao2_240","server":"154.92.9.213","port":2053,"uuid":"2cdb7934-691a-468f-afcb-d582fba984cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"5555.bangs.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"5555.bangs.us.kg"}}}
+proxy-groups:
+  - name: 🚀 节点选择
+    type: select
+    proxies:
+      - ♻️ 自动选择
+      - 🔯 故障转移
+      - 🔮 负载均衡
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
+      - DIRECT
+  - name: 🚀 手动切换
+    type: select
+    proxies:
+      - hao2_1
+      - hao2_2
+      - hao2_3
+      - hao2_4
+      - hao2_5
+      - hao2_6
+      - hao2_7
+      - hao2_8
+      - hao2_9
+      - hao2_10
+      - hao2_11
+      - hao2_12
+      - hao2_13
+      - hao2_14
+      - hao2_15
+      - hao2_16
+      - hao2_17
+      - hao2_18
+      - hao2_19
+      - hao2_20
+      - hao2_21
+      - hao2_22
+      - hao2_23
+      - hao2_24
+      - hao2_25
+      - hao2_26
+      - hao2_27
+      - hao2_28
+      - hao2_29
+      - hao2_30
+      - hao2_31
+      - hao2_32
+      - hao2_33
+      - hao2_34
+      - hao2_35
+      - hao2_36
+      - hao2_37
+      - hao2_38
+      - hao2_39
+      - hao2_40
+      - hao2_41
+      - hao2_42
+      - hao2_43
+      - hao2_44
+      - hao2_45
+      - hao2_46
+      - hao2_47
+      - hao2_48
+      - hao2_49
+      - hao2_50
+      - hao2_51
+      - hao2_52
+      - hao2_53
+      - hao2_54
+      - hao2_55
+      - hao2_56
+      - hao2_57
+      - hao2_58
+      - hao2_59
+      - hao2_60
+      - hao2_61
+      - hao2_62
+      - hao2_63
+      - hao2_64
+      - hao2_65
+      - hao2_66
+      - hao2_67
+      - hao2_68
+      - hao2_69
+      - hao2_70
+      - hao2_71
+      - hao2_72
+      - hao2_73
+      - hao2_74
+      - hao2_75
+      - hao2_76
+      - hao2_77
+      - hao2_78
+      - hao2_79
+      - hao2_80
+      - hao2_81
+      - hao2_82
+      - hao2_83
+      - hao2_84
+      - hao2_85
+      - hao2_86
+      - hao2_87
+      - hao2_88
+      - hao2_89
+      - hao2_90
+      - hao2_91
+      - hao2_92
+      - hao2_93
+      - hao2_94
+      - hao2_95
+      - hao2_96
+      - hao2_97
+      - hao2_98
+      - hao2_99
+      - hao2_100
+      - hao2_101
+      - hao2_102
+      - hao2_103
+      - hao2_104
+      - hao2_105
+      - hao2_106
+      - hao2_107
+      - hao2_108
+      - hao2_109
+      - hao2_110
+      - hao2_111
+      - hao2_112
+      - hao2_113
+      - hao2_114
+      - hao2_115
+      - hao2_116
+      - hao2_117
+      - hao2_118
+      - hao2_119
+      - hao2_120
+      - hao2_121
+      - hao2_122
+      - hao2_123
+      - hao2_124
+      - hao2_125
+      - hao2_126
+      - hao2_127
+      - hao2_128
+      - hao2_129
+      - hao2_130
+      - hao2_131
+      - hao2_132
+      - hao2_133
+      - hao2_134
+      - hao2_135
+      - hao2_136
+      - hao2_137
+      - hao2_138
+      - hao2_139
+      - hao2_140
+      - hao2_141
+      - hao2_142
+      - hao2_143
+      - hao2_144
+      - hao2_145
+      - hao2_146
+      - hao2_147
+      - hao2_148
+      - hao2_149
+      - hao2_150
+      - hao2_151
+      - hao2_152
+      - hao2_153
+      - hao2_154
+      - hao2_155
+      - hao2_156
+      - hao2_157
+      - hao2_158
+      - hao2_159
+      - hao2_160
+      - hao2_161
+      - hao2_162
+      - hao2_163
+      - hao2_164
+      - hao2_165
+      - hao2_166
+      - hao2_167
+      - hao2_168
+      - hao2_169
+      - hao2_170
+      - hao2_171
+      - hao2_172
+      - hao2_173
+      - hao2_174
+      - hao2_175
+      - hao2_176
+      - hao2_177
+      - hao2_178
+      - hao2_179
+      - hao2_180
+      - hao2_181
+      - hao2_182
+      - hao2_183
+      - hao2_184
+      - hao2_185
+      - hao2_186
+      - hao2_187
+      - hao2_188
+      - hao2_189
+      - hao2_190
+      - hao2_191
+      - hao2_192
+      - hao2_193
+      - hao2_194
+      - hao2_195
+      - hao2_196
+      - hao2_197
+      - hao2_198
+      - hao2_199
+      - hao2_200
+      - hao2_201
+      - hao2_202
+      - hao2_203
+      - hao2_204
+      - hao2_205
+      - hao2_206
+      - hao2_207
+      - hao2_208
+      - hao2_209
+      - hao2_210
+      - hao2_211
+      - hao2_212
+      - hao2_213
+      - hao2_214
+      - hao2_215
+      - hao2_216
+      - hao2_217
+      - hao2_218
+      - hao2_219
+      - hao2_220
+      - hao2_221
+      - hao2_222
+      - hao2_223
+      - hao2_224
+      - hao2_225
+      - hao2_226
+      - hao2_227
+      - hao2_228
+      - hao2_229
+      - hao2_230
+      - hao2_231
+      - hao2_232
+      - hao2_233
+      - hao2_234
+      - hao2_235
+      - hao2_236
+      - hao2_237
+      - hao2_238
+      - hao2_239
+      - hao2_240
+  - name: ♻️ 自动选择
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    proxies:
+      - hao2_1
+      - hao2_2
+      - hao2_3
+      - hao2_4
+      - hao2_5
+      - hao2_6
+      - hao2_7
+      - hao2_8
+      - hao2_9
+      - hao2_10
+      - hao2_11
+      - hao2_12
+      - hao2_13
+      - hao2_14
+      - hao2_15
+      - hao2_16
+      - hao2_17
+      - hao2_18
+      - hao2_19
+      - hao2_20
+      - hao2_21
+      - hao2_22
+      - hao2_23
+      - hao2_24
+      - hao2_25
+      - hao2_26
+      - hao2_27
+      - hao2_28
+      - hao2_29
+      - hao2_30
+      - hao2_31
+      - hao2_32
+      - hao2_33
+      - hao2_34
+      - hao2_35
+      - hao2_36
+      - hao2_37
+      - hao2_38
+      - hao2_39
+      - hao2_40
+      - hao2_41
+      - hao2_42
+      - hao2_43
+      - hao2_44
+      - hao2_45
+      - hao2_46
+      - hao2_47
+      - hao2_48
+      - hao2_49
+      - hao2_50
+      - hao2_51
+      - hao2_52
+      - hao2_53
+      - hao2_54
+      - hao2_55
+      - hao2_56
+      - hao2_57
+      - hao2_58
+      - hao2_59
+      - hao2_60
+      - hao2_61
+      - hao2_62
+      - hao2_63
+      - hao2_64
+      - hao2_65
+      - hao2_66
+      - hao2_67
+      - hao2_68
+      - hao2_69
+      - hao2_70
+      - hao2_71
+      - hao2_72
+      - hao2_73
+      - hao2_74
+      - hao2_75
+      - hao2_76
+      - hao2_77
+      - hao2_78
+      - hao2_79
+      - hao2_80
+      - hao2_81
+      - hao2_82
+      - hao2_83
+      - hao2_84
+      - hao2_85
+      - hao2_86
+      - hao2_87
+      - hao2_88
+      - hao2_89
+      - hao2_90
+      - hao2_91
+      - hao2_92
+      - hao2_93
+      - hao2_94
+      - hao2_95
+      - hao2_96
+      - hao2_97
+      - hao2_98
+      - hao2_99
+      - hao2_100
+      - hao2_101
+      - hao2_102
+      - hao2_103
+      - hao2_104
+      - hao2_105
+      - hao2_106
+      - hao2_107
+      - hao2_108
+      - hao2_109
+      - hao2_110
+      - hao2_111
+      - hao2_112
+      - hao2_113
+      - hao2_114
+      - hao2_115
+      - hao2_116
+      - hao2_117
+      - hao2_118
+      - hao2_119
+      - hao2_120
+      - hao2_121
+      - hao2_122
+      - hao2_123
+      - hao2_124
+      - hao2_125
+      - hao2_126
+      - hao2_127
+      - hao2_128
+      - hao2_129
+      - hao2_130
+      - hao2_131
+      - hao2_132
+      - hao2_133
+      - hao2_134
+      - hao2_135
+      - hao2_136
+      - hao2_137
+      - hao2_138
+      - hao2_139
+      - hao2_140
+      - hao2_141
+      - hao2_142
+      - hao2_143
+      - hao2_144
+      - hao2_145
+      - hao2_146
+      - hao2_147
+      - hao2_148
+      - hao2_149
+      - hao2_150
+      - hao2_151
+      - hao2_152
+      - hao2_153
+      - hao2_154
+      - hao2_155
+      - hao2_156
+      - hao2_157
+      - hao2_158
+      - hao2_159
+      - hao2_160
+      - hao2_161
+      - hao2_162
+      - hao2_163
+      - hao2_164
+      - hao2_165
+      - hao2_166
+      - hao2_167
+      - hao2_168
+      - hao2_169
+      - hao2_170
+      - hao2_171
+      - hao2_172
+      - hao2_173
+      - hao2_174
+      - hao2_175
+      - hao2_176
+      - hao2_177
+      - hao2_178
+      - hao2_179
+      - hao2_180
+      - hao2_181
+      - hao2_182
+      - hao2_183
+      - hao2_184
+      - hao2_185
+      - hao2_186
+      - hao2_187
+      - hao2_188
+      - hao2_189
+      - hao2_190
+      - hao2_191
+      - hao2_192
+      - hao2_193
+      - hao2_194
+      - hao2_195
+      - hao2_196
+      - hao2_197
+      - hao2_198
+      - hao2_199
+      - hao2_200
+      - hao2_201
+      - hao2_202
+      - hao2_203
+      - hao2_204
+      - hao2_205
+      - hao2_206
+      - hao2_207
+      - hao2_208
+      - hao2_209
+      - hao2_210
+      - hao2_211
+      - hao2_212
+      - hao2_213
+      - hao2_214
+      - hao2_215
+      - hao2_216
+      - hao2_217
+      - hao2_218
+      - hao2_219
+      - hao2_220
+      - hao2_221
+      - hao2_222
+      - hao2_223
+      - hao2_224
+      - hao2_225
+      - hao2_226
+      - hao2_227
+      - hao2_228
+      - hao2_229
+      - hao2_230
+      - hao2_231
+      - hao2_232
+      - hao2_233
+      - hao2_234
+      - hao2_235
+      - hao2_236
+      - hao2_237
+      - hao2_238
+      - hao2_239
+      - hao2_240
+  - name: 🔯 故障转移
+    type: fallback
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    proxies:
+      - hao2_1
+      - hao2_2
+      - hao2_3
+      - hao2_4
+      - hao2_5
+      - hao2_6
+      - hao2_7
+      - hao2_8
+      - hao2_9
+      - hao2_10
+      - hao2_11
+      - hao2_12
+      - hao2_13
+      - hao2_14
+      - hao2_15
+      - hao2_16
+      - hao2_17
+      - hao2_18
+      - hao2_19
+      - hao2_20
+      - hao2_21
+      - hao2_22
+      - hao2_23
+      - hao2_24
+      - hao2_25
+      - hao2_26
+      - hao2_27
+      - hao2_28
+      - hao2_29
+      - hao2_30
+      - hao2_31
+      - hao2_32
+      - hao2_33
+      - hao2_34
+      - hao2_35
+      - hao2_36
+      - hao2_37
+      - hao2_38
+      - hao2_39
+      - hao2_40
+      - hao2_41
+      - hao2_42
+      - hao2_43
+      - hao2_44
+      - hao2_45
+      - hao2_46
+      - hao2_47
+      - hao2_48
+      - hao2_49
+      - hao2_50
+      - hao2_51
+      - hao2_52
+      - hao2_53
+      - hao2_54
+      - hao2_55
+      - hao2_56
+      - hao2_57
+      - hao2_58
+      - hao2_59
+      - hao2_60
+      - hao2_61
+      - hao2_62
+      - hao2_63
+      - hao2_64
+      - hao2_65
+      - hao2_66
+      - hao2_67
+      - hao2_68
+      - hao2_69
+      - hao2_70
+      - hao2_71
+      - hao2_72
+      - hao2_73
+      - hao2_74
+      - hao2_75
+      - hao2_76
+      - hao2_77
+      - hao2_78
+      - hao2_79
+      - hao2_80
+      - hao2_81
+      - hao2_82
+      - hao2_83
+      - hao2_84
+      - hao2_85
+      - hao2_86
+      - hao2_87
+      - hao2_88
+      - hao2_89
+      - hao2_90
+      - hao2_91
+      - hao2_92
+      - hao2_93
+      - hao2_94
+      - hao2_95
+      - hao2_96
+      - hao2_97
+      - hao2_98
+      - hao2_99
+      - hao2_100
+      - hao2_101
+      - hao2_102
+      - hao2_103
+      - hao2_104
+      - hao2_105
+      - hao2_106
+      - hao2_107
+      - hao2_108
+      - hao2_109
+      - hao2_110
+      - hao2_111
+      - hao2_112
+      - hao2_113
+      - hao2_114
+      - hao2_115
+      - hao2_116
+      - hao2_117
+      - hao2_118
+      - hao2_119
+      - hao2_120
+      - hao2_121
+      - hao2_122
+      - hao2_123
+      - hao2_124
+      - hao2_125
+      - hao2_126
+      - hao2_127
+      - hao2_128
+      - hao2_129
+      - hao2_130
+      - hao2_131
+      - hao2_132
+      - hao2_133
+      - hao2_134
+      - hao2_135
+      - hao2_136
+      - hao2_137
+      - hao2_138
+      - hao2_139
+      - hao2_140
+      - hao2_141
+      - hao2_142
+      - hao2_143
+      - hao2_144
+      - hao2_145
+      - hao2_146
+      - hao2_147
+      - hao2_148
+      - hao2_149
+      - hao2_150
+      - hao2_151
+      - hao2_152
+      - hao2_153
+      - hao2_154
+      - hao2_155
+      - hao2_156
+      - hao2_157
+      - hao2_158
+      - hao2_159
+      - hao2_160
+      - hao2_161
+      - hao2_162
+      - hao2_163
+      - hao2_164
+      - hao2_165
+      - hao2_166
+      - hao2_167
+      - hao2_168
+      - hao2_169
+      - hao2_170
+      - hao2_171
+      - hao2_172
+      - hao2_173
+      - hao2_174
+      - hao2_175
+      - hao2_176
+      - hao2_177
+      - hao2_178
+      - hao2_179
+      - hao2_180
+      - hao2_181
+      - hao2_182
+      - hao2_183
+      - hao2_184
+      - hao2_185
+      - hao2_186
+      - hao2_187
+      - hao2_188
+      - hao2_189
+      - hao2_190
+      - hao2_191
+      - hao2_192
+      - hao2_193
+      - hao2_194
+      - hao2_195
+      - hao2_196
+      - hao2_197
+      - hao2_198
+      - hao2_199
+      - hao2_200
+      - hao2_201
+      - hao2_202
+      - hao2_203
+      - hao2_204
+      - hao2_205
+      - hao2_206
+      - hao2_207
+      - hao2_208
+      - hao2_209
+      - hao2_210
+      - hao2_211
+      - hao2_212
+      - hao2_213
+      - hao2_214
+      - hao2_215
+      - hao2_216
+      - hao2_217
+      - hao2_218
+      - hao2_219
+      - hao2_220
+      - hao2_221
+      - hao2_222
+      - hao2_223
+      - hao2_224
+      - hao2_225
+      - hao2_226
+      - hao2_227
+      - hao2_228
+      - hao2_229
+      - hao2_230
+      - hao2_231
+      - hao2_232
+      - hao2_233
+      - hao2_234
+      - hao2_235
+      - hao2_236
+      - hao2_237
+      - hao2_238
+      - hao2_239
+      - hao2_240
+  - name: 🔮 负载均衡
+    type: load-balance
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    proxies:
+      - hao2_1
+      - hao2_2
+      - hao2_3
+      - hao2_4
+      - hao2_5
+      - hao2_6
+      - hao2_7
+      - hao2_8
+      - hao2_9
+      - hao2_10
+      - hao2_11
+      - hao2_12
+      - hao2_13
+      - hao2_14
+      - hao2_15
+      - hao2_16
+      - hao2_17
+      - hao2_18
+      - hao2_19
+      - hao2_20
+      - hao2_21
+      - hao2_22
+      - hao2_23
+      - hao2_24
+      - hao2_25
+      - hao2_26
+      - hao2_27
+      - hao2_28
+      - hao2_29
+      - hao2_30
+      - hao2_31
+      - hao2_32
+      - hao2_33
+      - hao2_34
+      - hao2_35
+      - hao2_36
+      - hao2_37
+      - hao2_38
+      - hao2_39
+      - hao2_40
+      - hao2_41
+      - hao2_42
+      - hao2_43
+      - hao2_44
+      - hao2_45
+      - hao2_46
+      - hao2_47
+      - hao2_48
+      - hao2_49
+      - hao2_50
+      - hao2_51
+      - hao2_52
+      - hao2_53
+      - hao2_54
+      - hao2_55
+      - hao2_56
+      - hao2_57
+      - hao2_58
+      - hao2_59
+      - hao2_60
+      - hao2_61
+      - hao2_62
+      - hao2_63
+      - hao2_64
+      - hao2_65
+      - hao2_66
+      - hao2_67
+      - hao2_68
+      - hao2_69
+      - hao2_70
+      - hao2_71
+      - hao2_72
+      - hao2_73
+      - hao2_74
+      - hao2_75
+      - hao2_76
+      - hao2_77
+      - hao2_78
+      - hao2_79
+      - hao2_80
+      - hao2_81
+      - hao2_82
+      - hao2_83
+      - hao2_84
+      - hao2_85
+      - hao2_86
+      - hao2_87
+      - hao2_88
+      - hao2_89
+      - hao2_90
+      - hao2_91
+      - hao2_92
+      - hao2_93
+      - hao2_94
+      - hao2_95
+      - hao2_96
+      - hao2_97
+      - hao2_98
+      - hao2_99
+      - hao2_100
+      - hao2_101
+      - hao2_102
+      - hao2_103
+      - hao2_104
+      - hao2_105
+      - hao2_106
+      - hao2_107
+      - hao2_108
+      - hao2_109
+      - hao2_110
+      - hao2_111
+      - hao2_112
+      - hao2_113
+      - hao2_114
+      - hao2_115
+      - hao2_116
+      - hao2_117
+      - hao2_118
+      - hao2_119
+      - hao2_120
+      - hao2_121
+      - hao2_122
+      - hao2_123
+      - hao2_124
+      - hao2_125
+      - hao2_126
+      - hao2_127
+      - hao2_128
+      - hao2_129
+      - hao2_130
+      - hao2_131
+      - hao2_132
+      - hao2_133
+      - hao2_134
+      - hao2_135
+      - hao2_136
+      - hao2_137
+      - hao2_138
+      - hao2_139
+      - hao2_140
+      - hao2_141
+      - hao2_142
+      - hao2_143
+      - hao2_144
+      - hao2_145
+      - hao2_146
+      - hao2_147
+      - hao2_148
+      - hao2_149
+      - hao2_150
+      - hao2_151
+      - hao2_152
+      - hao2_153
+      - hao2_154
+      - hao2_155
+      - hao2_156
+      - hao2_157
+      - hao2_158
+      - hao2_159
+      - hao2_160
+      - hao2_161
+      - hao2_162
+      - hao2_163
+      - hao2_164
+      - hao2_165
+      - hao2_166
+      - hao2_167
+      - hao2_168
+      - hao2_169
+      - hao2_170
+      - hao2_171
+      - hao2_172
+      - hao2_173
+      - hao2_174
+      - hao2_175
+      - hao2_176
+      - hao2_177
+      - hao2_178
+      - hao2_179
+      - hao2_180
+      - hao2_181
+      - hao2_182
+      - hao2_183
+      - hao2_184
+      - hao2_185
+      - hao2_186
+      - hao2_187
+      - hao2_188
+      - hao2_189
+      - hao2_190
+      - hao2_191
+      - hao2_192
+      - hao2_193
+      - hao2_194
+      - hao2_195
+      - hao2_196
+      - hao2_197
+      - hao2_198
+      - hao2_199
+      - hao2_200
+      - hao2_201
+      - hao2_202
+      - hao2_203
+      - hao2_204
+      - hao2_205
+      - hao2_206
+      - hao2_207
+      - hao2_208
+      - hao2_209
+      - hao2_210
+      - hao2_211
+      - hao2_212
+      - hao2_213
+      - hao2_214
+      - hao2_215
+      - hao2_216
+      - hao2_217
+      - hao2_218
+      - hao2_219
+      - hao2_220
+      - hao2_221
+      - hao2_222
+      - hao2_223
+      - hao2_224
+      - hao2_225
+      - hao2_226
+      - hao2_227
+      - hao2_228
+      - hao2_229
+      - hao2_230
+      - hao2_231
+      - hao2_232
+      - hao2_233
+      - hao2_234
+      - hao2_235
+      - hao2_236
+      - hao2_237
+      - hao2_238
+      - hao2_239
+      - hao2_240
+  - name: 📲 电报消息
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - 🇸🇬 狮城节点
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
+      - DIRECT
+  - name: 💬 OpenAi
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - 🇸🇬 狮城节点
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
+      - DIRECT
+  - name: 📹 油管视频
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - 🇸🇬 狮城节点
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
+      - DIRECT
+  - name: 🎥 奈飞视频
+    type: select
+    proxies:
+      - 🎥 奈飞节点
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - 🇸🇬 狮城节点
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
+      - DIRECT
+  - name: 📺 巴哈姆特
+    type: select
+    proxies:
+      - 🇨🇳 台湾节点
+      - 🚀 节点选择
+      - 🚀 手动切换
+      - DIRECT
+  - name: 📺 哔哩哔哩
+    type: select
+    proxies:
+      - 🎯 全球直连
+      - 🇨🇳 台湾节点
+      - 🇭🇰 香港节点
+  - name: 🌍 国外媒体
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
+      - DIRECT
+  - name: 🌏 国内媒体
+    type: select
+    proxies:
+      - DIRECT
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇯🇵 日本节点
+      - 🚀 手动切换
+  - name: 📢 谷歌FCM
+    type: select
+    proxies:
+      - DIRECT
+      - 🚀 节点选择
+      - 🇺🇲 美国节点
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇯🇵 日本节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
+  - name: Ⓜ️ 微软Bing
+    type: select
+    proxies:
+      - DIRECT
+      - 🚀 节点选择
+      - 🇺🇲 美国节点
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇯🇵 日本节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
+  - name: Ⓜ️ 微软云盘
+    type: select
+    proxies:
+      - DIRECT
+      - 🚀 节点选择
+      - 🇺🇲 美国节点
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇯🇵 日本节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
+  - name: Ⓜ️ 微软服务
+    type: select
+    proxies:
+      - DIRECT
+      - 🚀 节点选择
+      - 🇺🇲 美国节点
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇯🇵 日本节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
+  - name: 🍎 苹果服务
+    type: select
+    proxies:
+      - DIRECT
+      - 🚀 节点选择
+      - 🇺🇲 美国节点
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇯🇵 日本节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
+  - name: 🎮 游戏平台
+    type: select
+    proxies:
+      - DIRECT
+      - 🚀 节点选择
+      - 🇺🇲 美国节点
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇯🇵 日本节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
+  - name: 🎶 网易音乐
+    type: select
+    proxies:
+      - DIRECT
+      - 🚀 节点选择
+      - ♻️ 自动选择
+  - name: 🎯 全球直连
+    type: select
+    proxies:
+      - DIRECT
+      - 🚀 节点选择
+      - ♻️ 自动选择
+  - name: 🛑 广告拦截
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+  - name: 🍃 应用净化
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+  - name: 🐟 漏网之鱼
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - DIRECT
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
+  - name: 🇭🇰 香港节点
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    proxies:
+      - DIRECT
+  - name: 🇯🇵 日本节点
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    proxies:
+      - DIRECT
+  - name: 🇺🇲 美国节点
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 150
+    proxies:
+      - DIRECT
+  - name: 🇨🇳 台湾节点
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    proxies:
+      - DIRECT
+  - name: 🇸🇬 狮城节点
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    proxies:
+      - DIRECT
+  - name: 🇰🇷 韩国节点
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    proxies:
+      - DIRECT
+  - name: 🎥 奈飞节点
+    type: select
+    proxies:
+      - DIRECT
+rules:
+  - GEOIP,CN,🎯 全球直连
+  - MATCH,🐟 漏网之鱼
