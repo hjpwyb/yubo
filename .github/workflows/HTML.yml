@@ -1,0 +1,25 @@
+name: Generate HTML
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+      - name: Generate HTML
+        run: python scripts/aaa/generate_html.py
+      - name: Commit and push HTML
+        run: |
+          git config user.name "GitHub Actions Bot"
+          git config user.email "<>"
+          git add scripts/aaa/index.html
+          git commit -m "Update index.html [skip ci]" || echo "No changes to commit"
+          git push
