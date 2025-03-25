@@ -1,0 +1,33 @@
+name: Video Crawler
+
+on:
+  # 定时触发，每天 UTC 16:00（对应中国时区 24:00）
+  schedule:
+    - cron: '0 16 * * *'  # 每天 UTC 16:00 运行
+  # 推送触发
+  push:
+    branches: [ main ]
+  # 手动触发
+  workflow_dispatch:
+
+jobs:
+  crawl:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+      - name: Install dependencies
+        run: pip install requests beautifulsoup4
+      - name: Run crawler
+        run: python scripts/aaa/test.py
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: crawler-output
+          path: |
+            scripts/bbb/
+            crawler_errors.log
+            debug_page_*.html
