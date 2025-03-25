@@ -21,7 +21,7 @@ jobs:
       - name: Run crawler
         run: python scripts/aaa/test.py
       - name: Upload artifacts
-        uses: actions/upload-artifact@0b7f8abb1508180a1a443f1e6b3c6e8bfdd1cf62  # 使用 v3 的 SHA
+        uses: actions/upload-artifact@v3  # 回退到 v3 版本标签
         with:
           name: crawler-output
           path: |
