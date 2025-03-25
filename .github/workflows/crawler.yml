@@ -20,11 +20,10 @@ jobs:
         run: pip install requests beautifulsoup4
       - name: Run crawler
         run: python scripts/aaa/test.py
-      - name: Upload artifacts
-        uses: actions/upload-artifact@v3  # 回退到 v3 版本标签
-        with:
-          name: crawler-output
-          path: |
-            scripts/bbb/
-            crawler_errors.log
-            debug_page_*.html
+      - name: Commit and push artifacts
+        run: |
+          git config user.name "GitHub Actions Bot"
+          git config user.email "<>"
+          git add scripts/bbb/ crawler_errors.log debug_page_*.html || echo "No files to add"
+          git commit -m "Upload crawler artifacts [skip ci]" || echo "No changes to commit"
+          git push
