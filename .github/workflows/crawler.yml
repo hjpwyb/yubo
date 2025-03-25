@@ -1,13 +1,10 @@
 name: Video Crawler
 
 on:
-  # 定时触发，每天 UTC 16:00（对应中国时区 24:00）
   schedule:
-    - cron: '0 16 * * *'  # 每天 UTC 16:00 运行
-  # 推送触发
+    - cron: '0 16 * * *'  # 每天 UTC 16:00（中国时区 24:00）
   push:
     branches: [ main ]
-  # 手动触发
   workflow_dispatch:
 
 jobs:
@@ -24,7 +21,7 @@ jobs:
       - name: Run crawler
         run: python scripts/aaa/test.py
       - name: Upload artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@0b7f8abb1508180a1a443f1e6b3c6e8bfdd1cf62  # 使用 v3 的 SHA
         with:
           name: crawler-output
           path: |
