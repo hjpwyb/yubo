@@ -32,6 +32,9 @@ def clear_folder(folder_path):
         print(f"权限错误，无法清理文件夹: {e}")
         log_error(f"权限错误: {e}")
         raise
+    except Exception as e:
+        print(f"清理文件夹失败: {e}")
+        log_error(f"清理文件夹失败: {e}")
 
 def ensure_directory_exists(path):
     if not os.path.exists(path):
@@ -151,7 +154,9 @@ def save_m3u8_files_for_each_episode(folder_path, title, m3u8_links):
             log_error(f"保存 M3U 文件失败: {e}")
 
 def main():
-    base_folder = os.path.abspath(os.getenv('BASE_FOLDER', '/volume1/docker/python_scripts/bbb'))
+    # 修改为 GitHub Actions 适用的相对路径
+    base_folder = os.path.abspath(os.path.join(os.getcwd(), 'scripts', 'bbb'))
+    print(f"使用 base_folder: {base_folder}")
     clear_folder(base_folder)
 
     start_page, end_page = 1, 2
