@@ -103,10 +103,6 @@ def extract_m3u8_links_and_poster(url):
         if response is None:
             return "default_title", None, []
         soup = BeautifulSoup(response.content, 'html.parser')
-        debug_file = f'debug_page_{int(time.time())}.html'
-        with open(debug_file, 'w', encoding='utf-8') as f:
-            f.write(soup.prettify())
-        print(f"网页内容已保存到: {debug_file}")
 
         title_div = soup.find('div', class_='vodInfo')
         title = title_div.find('h2').get_text(strip=True) if title_div else "default_title"
@@ -154,7 +150,6 @@ def save_m3u8_files_for_each_episode(folder_path, title, m3u8_links):
             log_error(f"保存 M3U 文件失败: {e}")
 
 def main():
-    # 修改为 GitHub Actions 适用的相对路径
     base_folder = os.path.abspath(os.path.join(os.getcwd(), 'scripts', 'bbb'))
     print(f"使用 base_folder: {base_folder}")
     clear_folder(base_folder)
