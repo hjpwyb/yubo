@@ -24,6 +24,6 @@ jobs:
         run: |
           git config user.name "GitHub Actions Bot"
           git config user.email "<>"
-          git add scripts/bbb/ crawler_errors.log debug_page_*.html || echo "No files to add"
+          git add scripts/bbb/ crawler_errors.log || echo "No files to add"
           git commit -m "Upload crawler artifacts [skip ci]" || echo "No changes to commit"
           git push
