@@ -1,0 +1,11 @@
+2025-03-28 16:31:24,540 - ERROR - 请求失败 (尝试 1/3): HTTPSConnectionPool(host='image.huyajs.com', port=443): Read timed out. (read timeout=10)
+2025-03-28 16:32:24,567 - ERROR - 请求失败 (尝试 1/3): HTTPSConnectionPool(host='image.huyajs.com', port=443): Read timed out. (read timeout=10)
+2025-03-28 16:33:04,176 - ERROR - 请求失败 (尝试 1/3): HTTPSConnectionPool(host='image.huyajs.com', port=443): Read timed out. (read timeout=10)
+2025-03-28 16:33:55,681 - ERROR - 请求失败 (尝试 1/3): HTTPSConnectionPool(host='image.huyajs.com', port=443): Read timed out. (read timeout=10)
+2025-03-28 16:35:23,251 - ERROR - 请求失败 (尝试 1/3): HTTPSConnectionPool(host='image.huyajs.com', port=443): Read timed out.
+2025-03-28 16:36:20,901 - ERROR - 请求失败 (尝试 1/3): HTTPSConnectionPool(host='image.huyajs.com', port=443): Read timed out. (read timeout=10)
+2025-03-28 16:36:40,282 - ERROR - 请求失败 (尝试 1/3): HTTPSConnectionPool(host='image.huyajs.com', port=443): Read timed out. (read timeout=10)
+2025-03-28 16:36:59,414 - ERROR - 请求失败 (尝试 1/3): HTTPSConnectionPool(host='image.huyajs.com', port=443): Read timed out. (read timeout=10)
+2025-03-28 16:37:21,193 - ERROR - 请求失败 (尝试 1/3): HTTPSConnectionPool(host='image.huyajs.com', port=443): Read timed out. (read timeout=10)
+2025-03-28 16:37:42,648 - ERROR - 请求失败 (尝试 1/3): HTTPSConnectionPool(host='image.huyajs.com', port=443): Read timed out.
+2025-03-28 16:39:08,030 - ERROR - 请求失败 (尝试 1/3): HTTPSConnectionPool(host='image.huyajs.com', port=443): Read timed out.
