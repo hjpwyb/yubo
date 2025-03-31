@@ -4,6 +4,8 @@ on:
   push:
     branches: [ main ]
   workflow_dispatch:
+  schedule:
+    - cron: "0 0,8,16 * * *"  # 每天0点、8点、16点运行
 
 jobs:
   generate:
