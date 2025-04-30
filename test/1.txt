@@ -1,14 +1,14 @@
 
 
-https://yubou.us.kg/https://raw.githubusercontent.com/hjpwyb/collect-tv-txt/refs/heads/main/live.m3u 
+https://raw.githubusercontent.com/hjpwyb/collect-tv-txt/refs/heads/main/live.m3u 
 
-https://yubou.us.kg/https://raw.githubusercontent.com/hjpwyb/collect-tv-txt/refs/heads/main/live.txt
+https://raw.githubusercontent.com/hjpwyb/collect-tv-txt/refs/heads/main/live.txt
 
 https://linyubo214.filegear-sg.me/live.m3u
 
 https://linyubo214.filegear-sg.me/live.txt
 
-https://yubou.us.kg/https://raw.githubusercontent.com/yuanzl77/IPTV/refs/heads/main/live.txt
+https://raw.githubusercontent.com/yuanzl77/IPTV/refs/heads/main/live.txt
 
 https://notabug.org/samhorse/c/src/87138458fdcc2fa0e378c619bc4c3fba7c1281c7/port/tvblive.txt
 
@@ -24,27 +24,27 @@ https://cdn.jsdelivr.net/gh/Guovin/iptv-api@gd/output/result.txt
 
 http://192.168.0.109:5000/webman/3rdparty/Allinone/m3utotxt.cgi?m3u_url=http://localhost:35455/tv.m3u
 
-https://ghp.ci/https://raw.githubusercontent.com/hjpwyb/TvBox11/refs/heads/main/yubo.txt
+https://raw.githubusercontent.com/hjpwyb/TvBox11/refs/heads/main/yubo.txt
 
-https://ghp.ci/https://raw.githubusercontent.com/hjpwyb/TvBox11/refs/heads/main/live.m3u
+https://raw.githubusercontent.com/hjpwyb/TvBox11/refs/heads/main/live.m3u
 
-https://ghp.ci/https://raw.githubusercontent.com/hjpwyb/TvBox11/refs/heads/main/live.txt
+https://raw.githubusercontent.com/hjpwyb/TvBox11/refs/heads/main/live.txt
 
-https://ghp.ci/https://raw.githubusercontent.com/hjpwyb/IPTV1/refs/heads/main/live.m3u
+https://raw.githubusercontent.com/hjpwyb/IPTV1/refs/heads/main/live.m3u
 
-https://ghp.ci/https://raw.githubusercontent.com/hjpwyb/yubo/refs/heads/main/scripts/ccc/merged.m3u
+https://raw.githubusercontent.com/hjpwyb/yubo/refs/heads/main/scripts/ccc/merged.m3u
 
-https://ghp.ci/https://raw.githubusercontent.com/hjpwyb/IPTV4/refs/heads/main/live.m3u
+https://raw.githubusercontent.com/hjpwyb/IPTV4/refs/heads/main/live.m3u
 
-https://ghp.ci/https://raw.githubusercontent.com/hjpwyb/IPTV4/refs/heads/main/live.txt
+https://raw.githubusercontent.com/hjpwyb/IPTV4/refs/heads/main/live.txt
 
-https://ghp.ci/https://raw.githubusercontent.com/hjpwyb/zubo/refs/heads/main/live.txt
+https://raw.githubusercontent.com/hjpwyb/zubo/refs/heads/main/live.txt
 
-https://ghp.ci/https://raw.githubusercontent.com/hjpwyb/zubo/refs/heads/main/live.m3u
+https://raw.githubusercontent.com/hjpwyb/zubo/refs/heads/main/live.m3u
 
-https://ghp.ci/https://raw.githubusercontent.com/wokaotianshi123/zubotv/refs/heads/main/chongqingzubo.txt
+https://raw.githubusercontent.com/wokaotianshi123/zubotv/refs/heads/main/chongqingzubo.txt
 
-https://ghp.ci/https://raw.githubusercontent.com/hjpwyb/WYB/refs/heads/main/data/test/tv.txt
+https://raw.githubusercontent.com/hjpwyb/WYB/refs/heads/main/data/test/tv.txt
 
 http://192.168.136.128:5666/
 
