@@ -16,3 +16,22 @@
 2025-05-08 16:37:49,541 - ERROR - 请求失败 (尝试 2/3): HTTPSConnectionPool(host='huyazy.com', port=443): Read timed out. (read timeout=10)
 2025-05-11 16:28:56,753 - ERROR - 请求失败 (尝试 1/3): HTTPSConnectionPool(host='huyazy.com', port=443): Read timed out. (read timeout=10)
 2025-05-11 16:29:24,554 - ERROR - 请求失败 (尝试 1/3): HTTPSConnectionPool(host='huyazy.com', port=443): Read timed out. (read timeout=10)
+2025-05-18 16:30:29,313 - ERROR - 请求失败 (尝试 1/3): HTTPSConnectionPool(host='image.huyajs.com', port=443): Read timed out. (read timeout=10)
+2025-05-18 16:30:52,230 - ERROR - 请求失败 (尝试 1/3): HTTPSConnectionPool(host='image.huyajs.com', port=443): Read timed out. (read timeout=10)
+2025-05-18 16:31:07,244 - ERROR - 请求失败 (尝试 2/3): HTTPSConnectionPool(host='image.huyajs.com', port=443): Max retries exceeded with url: /cover/d4e238509268feb6bacff616f13ab2d7.jpg (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f55c70ce350>, 'Connection to image.huyajs.com timed out. (connect timeout=10)'))
+2025-05-18 16:31:33,635 - ERROR - 请求失败 (尝试 1/3): HTTPSConnectionPool(host='image.huyajs.com', port=443): Max retries exceeded with url: /cover/b12301894a7e97052f5ca7f12cf56b64.jpg (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f55c70ce490>, 'Connection to image.huyajs.com timed out. (connect timeout=10)'))
+2025-05-18 16:32:55,832 - ERROR - 请求失败 (尝试 1/3): HTTPSConnectionPool(host='image.huyajs.com', port=443): Read timed out. (read timeout=10)
+2025-05-18 16:33:15,887 - ERROR - 请求失败 (尝试 2/3): HTTPSConnectionPool(host='image.huyajs.com', port=443): Read timed out. (read timeout=10)
+2025-05-18 16:34:51,475 - ERROR - 请求失败 (尝试 1/3): HTTPSConnectionPool(host='image.huyajs.com', port=443): Read timed out. (read timeout=10)
+2025-05-18 16:35:17,408 - ERROR - 请求失败 (尝试 1/3): HTTPSConnectionPool(host='image.huyajs.com', port=443): Max retries exceeded with url: /cover/0555ec339825d0d6a2358bacd80075a1.jpg (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f55c70cf890>, 'Connection to image.huyajs.com timed out. (connect timeout=10)'))
+2025-05-18 16:37:02,193 - ERROR - 请求失败 (尝试 1/3): HTTPSConnectionPool(host='image.huyajs.com', port=443): Max retries exceeded with url: /cover/be27ac294701d4ef90eaa8be7e5eff65.jpg (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f55c70ce350>, 'Connection to image.huyajs.com timed out. (connect timeout=10)'))
+2025-05-18 16:37:39,940 - ERROR - 请求失败 (尝试 1/3): HTTPSConnectionPool(host='image.huyajs.com', port=443): Max retries exceeded with url: /cover/82dbf0e1f43223ffc175e63f2b2c3aa2.jpg (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f55c70cefd0>, 'Connection to image.huyajs.com timed out. (connect timeout=10)'))
+2025-05-18 16:37:54,949 - ERROR - 请求失败 (尝试 2/3): HTTPSConnectionPool(host='image.huyajs.com', port=443): Max retries exceeded with url: /cover/82dbf0e1f43223ffc175e63f2b2c3aa2.jpg (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f55c70ce710>, 'Connection to image.huyajs.com timed out. (connect timeout=10)'))
+2025-05-18 16:38:10,170 - ERROR - 请求失败 (尝试 3/3): HTTPSConnectionPool(host='image.huyajs.com', port=443): Max retries exceeded with url: /cover/82dbf0e1f43223ffc175e63f2b2c3aa2.jpg (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f55c70ce490>, 'Connection to image.huyajs.com timed out. (connect timeout=10)'))
+2025-05-18 16:38:10,170 - ERROR - 封面图片下载失败: 封面图片下载失败
+2025-05-18 16:39:53,477 - ERROR - 请求失败 (尝试 1/3): HTTPSConnectionPool(host='huyazy.com', port=443): Read timed out. (read timeout=10)
+2025-05-18 16:40:20,387 - ERROR - 请求失败 (尝试 1/3): HTTPSConnectionPool(host='image.huyajs.com', port=443): Read timed out.
+2025-05-18 16:41:04,366 - ERROR - 请求失败 (尝试 1/3): HTTPSConnectionPool(host='image.huyajs.com', port=443): Read timed out.
+2025-05-18 16:41:52,814 - ERROR - 请求失败 (尝试 1/3): HTTPSConnectionPool(host='huyazy.com', port=443): Read timed out. (read timeout=10)
+2025-05-18 16:42:17,402 - ERROR - 请求失败 (尝试 1/3): HTTPSConnectionPool(host='huyazy.com', port=443): Max retries exceeded with url: /index.php/vod/detail/id/74315.html?ac=detail (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f55c70cf9d0>, 'Connection to huyazy.com timed out. (connect timeout=10)'))
+2025-05-18 16:42:47,326 - ERROR - 请求失败 (尝试 1/3): HTTPSConnectionPool(host='image.huyajs.com', port=443): Read timed out.
