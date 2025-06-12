@@ -35,3 +35,4 @@
 2025-05-18 16:41:52,814 - ERROR - 请求失败 (尝试 1/3): HTTPSConnectionPool(host='huyazy.com', port=443): Read timed out. (read timeout=10)
 2025-05-18 16:42:17,402 - ERROR - 请求失败 (尝试 1/3): HTTPSConnectionPool(host='huyazy.com', port=443): Max retries exceeded with url: /index.php/vod/detail/id/74315.html?ac=detail (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f55c70cf9d0>, 'Connection to huyazy.com timed out. (connect timeout=10)'))
 2025-05-18 16:42:47,326 - ERROR - 请求失败 (尝试 1/3): HTTPSConnectionPool(host='image.huyajs.com', port=443): Read timed out.
+2025-06-12 16:38:12,979 - ERROR - 请求失败 (尝试 1/3): HTTPSConnectionPool(host='image.huyajs.com', port=443): Read timed out. (read timeout=10)
