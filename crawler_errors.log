@@ -58,3 +58,5 @@
 2025-08-03 16:40:59,384 - ERROR - 请求失败 (尝试 1/3): HTTPSConnectionPool(host='image.huyajs.com', port=443): Max retries exceeded with url: /cover/cb014c7d4a37d5f868a429643dbef298.jpg (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f21c09ba850>, 'Connection to image.huyajs.com timed out. (connect timeout=10)'))
 2025-08-10 16:33:01,241 - ERROR - 请求失败 (尝试 1/3): HTTPSConnectionPool(host='image.huyajs.com', port=443): Read timed out. (read timeout=10)
 2025-08-10 16:34:16,611 - ERROR - 请求失败 (尝试 1/3): HTTPSConnectionPool(host='huyazy.com', port=443): Read timed out. (read timeout=10)
+2025-08-17 16:33:40,334 - ERROR - 解析失败: 'NoneType' object has no attribute 'find'
+2025-08-17 16:33:40,335 - ERROR - 未找到 M3U8 链接: https://huyazy.com/index.php/vod/detail/id/82588.html?ac=detail
