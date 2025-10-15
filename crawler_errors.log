@@ -177,3 +177,9 @@
 2025-10-14 16:31:23,446 - ERROR - 请求失败 (尝试 1/3): 403 Client Error: Forbidden for url: https://huyazy.com/index.php/vod/type/id/20/page/2.html?ac=detail
 2025-10-14 16:31:28,603 - ERROR - 请求失败 (尝试 2/3): 403 Client Error: Forbidden for url: https://huyazy.com/index.php/vod/type/id/20/page/2.html?ac=detail
 2025-10-14 16:31:33,774 - ERROR - 请求失败 (尝试 3/3): 403 Client Error: Forbidden for url: https://huyazy.com/index.php/vod/type/id/20/page/2.html?ac=detail
+2025-10-15 16:28:06,906 - ERROR - 请求失败 (尝试 1/3): 403 Client Error: Forbidden for url: https://huyazy.com/index.php/vod/type/id/20/page/1.html?ac=detail
+2025-10-15 16:28:11,978 - ERROR - 请求失败 (尝试 2/3): 403 Client Error: Forbidden for url: https://huyazy.com/index.php/vod/type/id/20/page/1.html?ac=detail
+2025-10-15 16:28:17,058 - ERROR - 请求失败 (尝试 3/3): 403 Client Error: Forbidden for url: https://huyazy.com/index.php/vod/type/id/20/page/1.html?ac=detail
+2025-10-15 16:28:17,123 - ERROR - 请求失败 (尝试 1/3): 403 Client Error: Forbidden for url: https://huyazy.com/index.php/vod/type/id/20/page/2.html?ac=detail
+2025-10-15 16:28:22,188 - ERROR - 请求失败 (尝试 2/3): 403 Client Error: Forbidden for url: https://huyazy.com/index.php/vod/type/id/20/page/2.html?ac=detail
+2025-10-15 16:28:27,258 - ERROR - 请求失败 (尝试 3/3): 403 Client Error: Forbidden for url: https://huyazy.com/index.php/vod/type/id/20/page/2.html?ac=detail
