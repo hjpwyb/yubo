@@ -1289,3 +1289,5 @@
 2026-01-21 17:06:14,648 - ERROR - 请求失败 (尝试 1/3): HTTPSConnectionPool(host='huyazy.com', port=443): Read timed out. (read timeout=10)
 2026-01-21 17:06:34,384 - ERROR - 请求失败 (尝试 1/3): HTTPSConnectionPool(host='huyazy.com', port=443): Read timed out. (read timeout=10)
 2026-01-21 17:07:18,069 - ERROR - 请求失败 (尝试 1/3): HTTPSConnectionPool(host='huyazy.com', port=443): Read timed out. (read timeout=10)
+2026-01-27 16:40:36,686 - ERROR - 请求失败 (尝试 1/3): HTTPSConnectionPool(host='huyazy.com', port=443): Read timed out. (read timeout=10)
+2026-01-27 16:40:56,289 - ERROR - 请求失败 (尝试 1/3): HTTPSConnectionPool(host='huyazy.com', port=443): Read timed out. (read timeout=10)
