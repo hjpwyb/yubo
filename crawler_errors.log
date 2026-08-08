@@ -1511,3 +1511,403 @@
 2026-06-25 18:26:29,585 - ERROR - 请求失败 (尝试 3/3): HTTPSConnectionPool(host='huyazy.com', port=443): Read timed out. (read timeout=10)
 2026-06-25 18:26:29,585 - ERROR - 未找到 M3U8 链接: https://huyazy.com/index.php/vod/detail/id/108431.html?ac=detail
 2026-06-25 18:26:42,776 - ERROR - 请求失败 (尝试 1/3): HTTPSConnectionPool(host='huyazy.com', port=443): Read timed out. (read timeout=10)
+2026-08-08 16:41:38,333 - ERROR - 请求失败 (尝试 1/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/75a9541ac7c83d368cc3edb3391e5f35.jpg
+2026-08-08 16:41:43,421 - ERROR - 请求失败 (尝试 2/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/75a9541ac7c83d368cc3edb3391e5f35.jpg
+2026-08-08 16:41:48,479 - ERROR - 请求失败 (尝试 3/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/75a9541ac7c83d368cc3edb3391e5f35.jpg
+2026-08-08 16:41:48,480 - ERROR - 封面图片下载失败: 封面图片下载失败
+2026-08-08 16:41:53,205 - ERROR - 请求失败 (尝试 1/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/c333b687b265fafb41d9c90a0e07a2d2.jpg
+2026-08-08 16:41:58,316 - ERROR - 请求失败 (尝试 2/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/c333b687b265fafb41d9c90a0e07a2d2.jpg
+2026-08-08 16:42:03,424 - ERROR - 请求失败 (尝试 3/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/c333b687b265fafb41d9c90a0e07a2d2.jpg
+2026-08-08 16:42:03,425 - ERROR - 封面图片下载失败: 封面图片下载失败
+2026-08-08 16:42:05,800 - ERROR - 请求失败 (尝试 1/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/96504deb1005a2eb231907d2e8ddd0b2.jpg
+2026-08-08 16:42:10,861 - ERROR - 请求失败 (尝试 2/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/96504deb1005a2eb231907d2e8ddd0b2.jpg
+2026-08-08 16:42:15,924 - ERROR - 请求失败 (尝试 3/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/96504deb1005a2eb231907d2e8ddd0b2.jpg
+2026-08-08 16:42:15,924 - ERROR - 封面图片下载失败: 封面图片下载失败
+2026-08-08 16:42:20,899 - ERROR - 请求失败 (尝试 1/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/8b9d2e03edc1530098198b351e72a38e.jpg
+2026-08-08 16:42:25,958 - ERROR - 请求失败 (尝试 2/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/8b9d2e03edc1530098198b351e72a38e.jpg
+2026-08-08 16:42:31,027 - ERROR - 请求失败 (尝试 3/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/8b9d2e03edc1530098198b351e72a38e.jpg
+2026-08-08 16:42:31,028 - ERROR - 封面图片下载失败: 封面图片下载失败
+2026-08-08 16:42:34,363 - ERROR - 请求失败 (尝试 1/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/62ea9dda624dbb9d13d0394a6b5a14fa.jpg
+2026-08-08 16:42:39,422 - ERROR - 请求失败 (尝试 2/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/62ea9dda624dbb9d13d0394a6b5a14fa.jpg
+2026-08-08 16:42:44,482 - ERROR - 请求失败 (尝试 3/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/62ea9dda624dbb9d13d0394a6b5a14fa.jpg
+2026-08-08 16:42:44,482 - ERROR - 封面图片下载失败: 封面图片下载失败
+2026-08-08 16:42:48,215 - ERROR - 请求失败 (尝试 1/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/d3b9a2ba19e12dc6c1fdcc3501f05e77.jpg
+2026-08-08 16:42:53,334 - ERROR - 请求失败 (尝试 2/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/d3b9a2ba19e12dc6c1fdcc3501f05e77.jpg
+2026-08-08 16:42:58,482 - ERROR - 请求失败 (尝试 3/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/d3b9a2ba19e12dc6c1fdcc3501f05e77.jpg
+2026-08-08 16:42:58,482 - ERROR - 封面图片下载失败: 封面图片下载失败
+2026-08-08 16:43:02,211 - ERROR - 请求失败 (尝试 1/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/79c7a8afe35c0143784423f63775943a.jpg
+2026-08-08 16:43:07,329 - ERROR - 请求失败 (尝试 2/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/79c7a8afe35c0143784423f63775943a.jpg
+2026-08-08 16:43:12,509 - ERROR - 请求失败 (尝试 3/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/79c7a8afe35c0143784423f63775943a.jpg
+2026-08-08 16:43:12,510 - ERROR - 封面图片下载失败: 封面图片下载失败
+2026-08-08 16:43:15,963 - ERROR - 请求失败 (尝试 1/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/2217b2679bbacb3a1fef897036972bdc.jpg
+2026-08-08 16:43:21,021 - ERROR - 请求失败 (尝试 2/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/2217b2679bbacb3a1fef897036972bdc.jpg
+2026-08-08 16:43:26,142 - ERROR - 请求失败 (尝试 3/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/2217b2679bbacb3a1fef897036972bdc.jpg
+2026-08-08 16:43:26,143 - ERROR - 封面图片下载失败: 封面图片下载失败
+2026-08-08 16:43:30,920 - ERROR - 请求失败 (尝试 1/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/33c17db61e23420b1736001ca644bd4a.jpg
+2026-08-08 16:43:36,123 - ERROR - 请求失败 (尝试 2/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/33c17db61e23420b1736001ca644bd4a.jpg
+2026-08-08 16:43:41,183 - ERROR - 请求失败 (尝试 3/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/33c17db61e23420b1736001ca644bd4a.jpg
+2026-08-08 16:43:41,184 - ERROR - 封面图片下载失败: 封面图片下载失败
+2026-08-08 16:43:45,831 - ERROR - 请求失败 (尝试 1/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/591f2379af4591d7d39f213651d55b70.jpg
+2026-08-08 16:43:50,941 - ERROR - 请求失败 (尝试 2/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/591f2379af4591d7d39f213651d55b70.jpg
+2026-08-08 16:43:55,999 - ERROR - 请求失败 (尝试 3/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/591f2379af4591d7d39f213651d55b70.jpg
+2026-08-08 16:43:56,000 - ERROR - 封面图片下载失败: 封面图片下载失败
+2026-08-08 16:43:59,504 - ERROR - 请求失败 (尝试 1/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/8ab9281e398e30981abc80330f07d7b8.jpg
+2026-08-08 16:44:04,565 - ERROR - 请求失败 (尝试 2/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/8ab9281e398e30981abc80330f07d7b8.jpg
+2026-08-08 16:44:09,624 - ERROR - 请求失败 (尝试 3/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/8ab9281e398e30981abc80330f07d7b8.jpg
+2026-08-08 16:44:09,625 - ERROR - 封面图片下载失败: 封面图片下载失败
+2026-08-08 16:44:14,168 - ERROR - 请求失败 (尝试 1/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/3ff13f44e638abfed1971e52cba77b09.jpg
+2026-08-08 16:44:19,230 - ERROR - 请求失败 (尝试 2/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/3ff13f44e638abfed1971e52cba77b09.jpg
+2026-08-08 16:44:24,288 - ERROR - 请求失败 (尝试 3/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/3ff13f44e638abfed1971e52cba77b09.jpg
+2026-08-08 16:44:24,289 - ERROR - 封面图片下载失败: 封面图片下载失败
+2026-08-08 16:44:29,170 - ERROR - 请求失败 (尝试 1/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/25fa2d39a0143f1f30c36eece145a526.jpg
+2026-08-08 16:44:34,237 - ERROR - 请求失败 (尝试 2/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/25fa2d39a0143f1f30c36eece145a526.jpg
+2026-08-08 16:44:39,302 - ERROR - 请求失败 (尝试 3/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/25fa2d39a0143f1f30c36eece145a526.jpg
+2026-08-08 16:44:39,303 - ERROR - 封面图片下载失败: 封面图片下载失败
+2026-08-08 16:44:43,394 - ERROR - 请求失败 (尝试 1/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/fb9e85915d3ce0f50ac84a6c40d2d677.jpg
+2026-08-08 16:44:48,456 - ERROR - 请求失败 (尝试 2/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/fb9e85915d3ce0f50ac84a6c40d2d677.jpg
+2026-08-08 16:44:53,515 - ERROR - 请求失败 (尝试 3/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/fb9e85915d3ce0f50ac84a6c40d2d677.jpg
+2026-08-08 16:44:53,516 - ERROR - 封面图片下载失败: 封面图片下载失败
+2026-08-08 16:44:56,955 - ERROR - 请求失败 (尝试 1/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/9dc9bcad082c9053f5cb09f2cc7feec0.jpg
+2026-08-08 16:45:02,016 - ERROR - 请求失败 (尝试 2/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/9dc9bcad082c9053f5cb09f2cc7feec0.jpg
+2026-08-08 16:45:07,074 - ERROR - 请求失败 (尝试 3/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/9dc9bcad082c9053f5cb09f2cc7feec0.jpg
+2026-08-08 16:45:07,074 - ERROR - 封面图片下载失败: 封面图片下载失败
+2026-08-08 16:45:11,928 - ERROR - 请求失败 (尝试 1/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/f5b55ce43aa86c97a8fbfaa9afe9fe95.jpg
+2026-08-08 16:45:16,991 - ERROR - 请求失败 (尝试 2/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/f5b55ce43aa86c97a8fbfaa9afe9fe95.jpg
+2026-08-08 16:45:22,050 - ERROR - 请求失败 (尝试 3/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/f5b55ce43aa86c97a8fbfaa9afe9fe95.jpg
+2026-08-08 16:45:22,051 - ERROR - 封面图片下载失败: 封面图片下载失败
+2026-08-08 16:45:25,867 - ERROR - 请求失败 (尝试 1/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/28561118039535f0d908957c92c24993.jpg
+2026-08-08 16:45:30,930 - ERROR - 请求失败 (尝试 2/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/28561118039535f0d908957c92c24993.jpg
+2026-08-08 16:45:35,990 - ERROR - 请求失败 (尝试 3/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/28561118039535f0d908957c92c24993.jpg
+2026-08-08 16:45:35,991 - ERROR - 封面图片下载失败: 封面图片下载失败
+2026-08-08 16:45:40,558 - ERROR - 请求失败 (尝试 1/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/772cd096cad6ce88360ade41b86ea637.jpg
+2026-08-08 16:45:45,620 - ERROR - 请求失败 (尝试 2/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/772cd096cad6ce88360ade41b86ea637.jpg
+2026-08-08 16:45:50,686 - ERROR - 请求失败 (尝试 3/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/772cd096cad6ce88360ade41b86ea637.jpg
+2026-08-08 16:45:50,687 - ERROR - 封面图片下载失败: 封面图片下载失败
+2026-08-08 16:45:54,754 - ERROR - 请求失败 (尝试 1/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/d25fdd6b1fe1ae5c96fb2cd009d8e414.jpg
+2026-08-08 16:45:59,815 - ERROR - 请求失败 (尝试 2/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/d25fdd6b1fe1ae5c96fb2cd009d8e414.jpg
+2026-08-08 16:46:04,969 - ERROR - 请求失败 (尝试 3/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/d25fdd6b1fe1ae5c96fb2cd009d8e414.jpg
+2026-08-08 16:46:04,970 - ERROR - 封面图片下载失败: 封面图片下载失败
+2026-08-08 16:46:09,969 - ERROR - 请求失败 (尝试 1/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/650c398bdddf916e77d6e7b7f7ff3804.jpg
+2026-08-08 16:46:15,034 - ERROR - 请求失败 (尝试 2/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/650c398bdddf916e77d6e7b7f7ff3804.jpg
+2026-08-08 16:46:20,095 - ERROR - 请求失败 (尝试 3/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/650c398bdddf916e77d6e7b7f7ff3804.jpg
+2026-08-08 16:46:20,096 - ERROR - 封面图片下载失败: 封面图片下载失败
+2026-08-08 16:46:23,231 - ERROR - 请求失败 (尝试 1/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/a121f8252c92069e780c966a2c023ddf.jpg
+2026-08-08 16:46:28,290 - ERROR - 请求失败 (尝试 2/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/a121f8252c92069e780c966a2c023ddf.jpg
+2026-08-08 16:46:33,349 - ERROR - 请求失败 (尝试 3/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/a121f8252c92069e780c966a2c023ddf.jpg
+2026-08-08 16:46:33,349 - ERROR - 封面图片下载失败: 封面图片下载失败
+2026-08-08 16:46:38,200 - ERROR - 请求失败 (尝试 1/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/1597b2f580e51b10d5cfb66594e45a36.jpg
+2026-08-08 16:46:43,260 - ERROR - 请求失败 (尝试 2/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/1597b2f580e51b10d5cfb66594e45a36.jpg
+2026-08-08 16:46:48,318 - ERROR - 请求失败 (尝试 3/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/1597b2f580e51b10d5cfb66594e45a36.jpg
+2026-08-08 16:46:48,319 - ERROR - 封面图片下载失败: 封面图片下载失败
+2026-08-08 16:46:51,028 - ERROR - 请求失败 (尝试 1/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/be6ef6ee1ef700ad4a85bb34b622093b.jpg
+2026-08-08 16:46:56,114 - ERROR - 请求失败 (尝试 2/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/be6ef6ee1ef700ad4a85bb34b622093b.jpg
+2026-08-08 16:47:01,225 - ERROR - 请求失败 (尝试 3/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/be6ef6ee1ef700ad4a85bb34b622093b.jpg
+2026-08-08 16:47:01,226 - ERROR - 封面图片下载失败: 封面图片下载失败
+2026-08-08 16:47:06,445 - ERROR - 请求失败 (尝试 1/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/140686ed13c7d43cf6be84713f9cfe5e.jpg
+2026-08-08 16:47:11,504 - ERROR - 请求失败 (尝试 2/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/140686ed13c7d43cf6be84713f9cfe5e.jpg
+2026-08-08 16:47:16,683 - ERROR - 请求失败 (尝试 3/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/140686ed13c7d43cf6be84713f9cfe5e.jpg
+2026-08-08 16:47:16,684 - ERROR - 封面图片下载失败: 封面图片下载失败
+2026-08-08 16:47:19,887 - ERROR - 请求失败 (尝试 1/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/c12cdd698b4f689d32234d7e3c115edf.jpg
+2026-08-08 16:47:24,997 - ERROR - 请求失败 (尝试 2/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/c12cdd698b4f689d32234d7e3c115edf.jpg
+2026-08-08 16:47:30,058 - ERROR - 请求失败 (尝试 3/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/c12cdd698b4f689d32234d7e3c115edf.jpg
+2026-08-08 16:47:30,059 - ERROR - 封面图片下载失败: 封面图片下载失败
+2026-08-08 16:47:33,932 - ERROR - 请求失败 (尝试 1/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/7428caa95fa1b134a1f90f1d1e40fe0d.jpg
+2026-08-08 16:47:38,990 - ERROR - 请求失败 (尝试 2/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/7428caa95fa1b134a1f90f1d1e40fe0d.jpg
+2026-08-08 16:47:44,051 - ERROR - 请求失败 (尝试 3/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/7428caa95fa1b134a1f90f1d1e40fe0d.jpg
+2026-08-08 16:47:44,052 - ERROR - 封面图片下载失败: 封面图片下载失败
+2026-08-08 16:47:48,254 - ERROR - 请求失败 (尝试 1/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/b59aeeac92e7485ae1be75fccd0d5d8f.jpg
+2026-08-08 16:47:53,312 - ERROR - 请求失败 (尝试 2/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/b59aeeac92e7485ae1be75fccd0d5d8f.jpg
+2026-08-08 16:47:58,375 - ERROR - 请求失败 (尝试 3/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/b59aeeac92e7485ae1be75fccd0d5d8f.jpg
+2026-08-08 16:47:58,376 - ERROR - 封面图片下载失败: 封面图片下载失败
+2026-08-08 16:48:02,732 - ERROR - 请求失败 (尝试 1/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/ca89691c7b585a53904f67da2d0eef8b.jpg
+2026-08-08 16:48:07,851 - ERROR - 请求失败 (尝试 2/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/ca89691c7b585a53904f67da2d0eef8b.jpg
+2026-08-08 16:48:12,979 - ERROR - 请求失败 (尝试 3/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/ca89691c7b585a53904f67da2d0eef8b.jpg
+2026-08-08 16:48:12,980 - ERROR - 封面图片下载失败: 封面图片下载失败
+2026-08-08 16:48:16,917 - ERROR - 请求失败 (尝试 1/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/554d977f680d6324bed352e1028dbcb8.jpg
+2026-08-08 16:48:21,976 - ERROR - 请求失败 (尝试 2/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/554d977f680d6324bed352e1028dbcb8.jpg
+2026-08-08 16:48:27,035 - ERROR - 请求失败 (尝试 3/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/554d977f680d6324bed352e1028dbcb8.jpg
+2026-08-08 16:48:27,036 - ERROR - 封面图片下载失败: 封面图片下载失败
+2026-08-08 16:48:30,882 - ERROR - 请求失败 (尝试 1/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/cdf41086347bdb01ab77338010d600df.jpg
+2026-08-08 16:48:35,947 - ERROR - 请求失败 (尝试 2/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/cdf41086347bdb01ab77338010d600df.jpg
+2026-08-08 16:48:41,005 - ERROR - 请求失败 (尝试 3/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/cdf41086347bdb01ab77338010d600df.jpg
+2026-08-08 16:48:41,005 - ERROR - 封面图片下载失败: 封面图片下载失败
+2026-08-08 16:48:43,484 - ERROR - 请求失败 (尝试 1/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/e800ecc9c98f58b9c1430e17630c4eac.jpg
+2026-08-08 16:48:48,543 - ERROR - 请求失败 (尝试 2/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/e800ecc9c98f58b9c1430e17630c4eac.jpg
+2026-08-08 16:48:53,610 - ERROR - 请求失败 (尝试 3/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/e800ecc9c98f58b9c1430e17630c4eac.jpg
+2026-08-08 16:48:53,610 - ERROR - 封面图片下载失败: 封面图片下载失败
+2026-08-08 16:48:58,631 - ERROR - 请求失败 (尝试 1/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/19c1e35bfe46ff3a45d8c6f112082293.jpg
+2026-08-08 16:49:03,689 - ERROR - 请求失败 (尝试 2/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/19c1e35bfe46ff3a45d8c6f112082293.jpg
+2026-08-08 16:49:08,835 - ERROR - 请求失败 (尝试 3/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/19c1e35bfe46ff3a45d8c6f112082293.jpg
+2026-08-08 16:49:08,835 - ERROR - 封面图片下载失败: 封面图片下载失败
+2026-08-08 16:49:13,083 - ERROR - 请求失败 (尝试 1/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/c753a28f7391c0a9b53479292ad688a0.jpg
+2026-08-08 16:49:18,142 - ERROR - 请求失败 (尝试 2/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/c753a28f7391c0a9b53479292ad688a0.jpg
+2026-08-08 16:49:23,202 - ERROR - 请求失败 (尝试 3/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/c753a28f7391c0a9b53479292ad688a0.jpg
+2026-08-08 16:49:23,203 - ERROR - 封面图片下载失败: 封面图片下载失败
+2026-08-08 16:49:28,089 - ERROR - 请求失败 (尝试 1/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/36bdb8b5ddd187bdcf22051678f457ea.jpg
+2026-08-08 16:49:33,147 - ERROR - 请求失败 (尝试 2/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/36bdb8b5ddd187bdcf22051678f457ea.jpg
+2026-08-08 16:49:38,208 - ERROR - 请求失败 (尝试 3/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/36bdb8b5ddd187bdcf22051678f457ea.jpg
+2026-08-08 16:49:38,208 - ERROR - 封面图片下载失败: 封面图片下载失败
+2026-08-08 16:49:43,230 - ERROR - 请求失败 (尝试 1/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/1ca2f82e3d208d4d56db7bcd9d6c20ce.jpg
+2026-08-08 16:49:48,289 - ERROR - 请求失败 (尝试 2/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/1ca2f82e3d208d4d56db7bcd9d6c20ce.jpg
+2026-08-08 16:49:53,352 - ERROR - 请求失败 (尝试 3/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/1ca2f82e3d208d4d56db7bcd9d6c20ce.jpg
+2026-08-08 16:49:53,353 - ERROR - 封面图片下载失败: 封面图片下载失败
+2026-08-08 16:49:56,129 - ERROR - 请求失败 (尝试 1/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/347d11cad4711bf3d6af09d8b7965731.jpg
+2026-08-08 16:50:01,187 - ERROR - 请求失败 (尝试 2/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/347d11cad4711bf3d6af09d8b7965731.jpg
+2026-08-08 16:50:06,250 - ERROR - 请求失败 (尝试 3/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/347d11cad4711bf3d6af09d8b7965731.jpg
+2026-08-08 16:50:06,251 - ERROR - 封面图片下载失败: 封面图片下载失败
+2026-08-08 16:50:10,261 - ERROR - 请求失败 (尝试 1/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/df16fccc1c750aa8c4b8c37a11e6ebd1.jpg
+2026-08-08 16:50:15,324 - ERROR - 请求失败 (尝试 2/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/df16fccc1c750aa8c4b8c37a11e6ebd1.jpg
+2026-08-08 16:50:20,382 - ERROR - 请求失败 (尝试 3/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/df16fccc1c750aa8c4b8c37a11e6ebd1.jpg
+2026-08-08 16:50:20,383 - ERROR - 封面图片下载失败: 封面图片下载失败
+2026-08-08 16:50:23,374 - ERROR - 请求失败 (尝试 1/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/050bd0acb494ffbb263b315e0d6ba67f.jpg
+2026-08-08 16:50:28,434 - ERROR - 请求失败 (尝试 2/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/050bd0acb494ffbb263b315e0d6ba67f.jpg
+2026-08-08 16:50:33,495 - ERROR - 请求失败 (尝试 3/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/050bd0acb494ffbb263b315e0d6ba67f.jpg
+2026-08-08 16:50:33,496 - ERROR - 封面图片下载失败: 封面图片下载失败
+2026-08-08 16:50:36,967 - ERROR - 请求失败 (尝试 1/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/406e049b2f3585064598b37495da8e2a.jpg
+2026-08-08 16:50:42,028 - ERROR - 请求失败 (尝试 2/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/406e049b2f3585064598b37495da8e2a.jpg
+2026-08-08 16:50:47,088 - ERROR - 请求失败 (尝试 3/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/406e049b2f3585064598b37495da8e2a.jpg
+2026-08-08 16:50:47,089 - ERROR - 封面图片下载失败: 封面图片下载失败
+2026-08-08 16:50:52,048 - ERROR - 请求失败 (尝试 1/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/5cf6d7132f8151dc1ac3e0399d2e9666.jpg
+2026-08-08 16:50:57,134 - ERROR - 请求失败 (尝试 2/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/5cf6d7132f8151dc1ac3e0399d2e9666.jpg
+2026-08-08 16:51:02,343 - ERROR - 请求失败 (尝试 3/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/5cf6d7132f8151dc1ac3e0399d2e9666.jpg
+2026-08-08 16:51:02,344 - ERROR - 封面图片下载失败: 封面图片下载失败
+2026-08-08 16:51:06,504 - ERROR - 请求失败 (尝试 1/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/870d620af7e0483aa9a46935dc1217a5.jpg
+2026-08-08 16:51:11,588 - ERROR - 请求失败 (尝试 2/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/870d620af7e0483aa9a46935dc1217a5.jpg
+2026-08-08 16:51:16,771 - ERROR - 请求失败 (尝试 3/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/870d620af7e0483aa9a46935dc1217a5.jpg
+2026-08-08 16:51:16,772 - ERROR - 封面图片下载失败: 封面图片下载失败
+2026-08-08 16:51:20,815 - ERROR - 请求失败 (尝试 1/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/91766eac45d676121c0227644f8e9d76.jpg
+2026-08-08 16:51:25,922 - ERROR - 请求失败 (尝试 2/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/91766eac45d676121c0227644f8e9d76.jpg
+2026-08-08 16:51:30,982 - ERROR - 请求失败 (尝试 3/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/91766eac45d676121c0227644f8e9d76.jpg
+2026-08-08 16:51:30,983 - ERROR - 封面图片下载失败: 封面图片下载失败
+2026-08-08 16:51:35,290 - ERROR - 请求失败 (尝试 1/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/071d1bbc0a06a811594d249a85c8400a.jpg
+2026-08-08 16:51:40,364 - ERROR - 请求失败 (尝试 2/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/071d1bbc0a06a811594d249a85c8400a.jpg
+2026-08-08 16:51:45,424 - ERROR - 请求失败 (尝试 3/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/071d1bbc0a06a811594d249a85c8400a.jpg
+2026-08-08 16:51:45,425 - ERROR - 封面图片下载失败: 封面图片下载失败
+2026-08-08 16:51:48,819 - ERROR - 请求失败 (尝试 1/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/eebf8bc2ea9d987dd367a77d0ed094ab.jpg
+2026-08-08 16:51:53,997 - ERROR - 请求失败 (尝试 2/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/eebf8bc2ea9d987dd367a77d0ed094ab.jpg
+2026-08-08 16:51:59,068 - ERROR - 请求失败 (尝试 3/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/eebf8bc2ea9d987dd367a77d0ed094ab.jpg
+2026-08-08 16:51:59,068 - ERROR - 封面图片下载失败: 封面图片下载失败
+2026-08-08 16:52:03,091 - ERROR - 请求失败 (尝试 1/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/b6ae4caca334f55ca4b819d3dbf9b288.jpg
+2026-08-08 16:52:08,209 - ERROR - 请求失败 (尝试 2/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/b6ae4caca334f55ca4b819d3dbf9b288.jpg
+2026-08-08 16:52:13,269 - ERROR - 请求失败 (尝试 3/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/b6ae4caca334f55ca4b819d3dbf9b288.jpg
+2026-08-08 16:52:13,270 - ERROR - 封面图片下载失败: 封面图片下载失败
+2026-08-08 16:52:18,074 - ERROR - 请求失败 (尝试 1/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/d8a43f1701d4f456c9740f735a1917ff.jpg
+2026-08-08 16:52:23,134 - ERROR - 请求失败 (尝试 2/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/d8a43f1701d4f456c9740f735a1917ff.jpg
+2026-08-08 16:52:28,202 - ERROR - 请求失败 (尝试 3/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/d8a43f1701d4f456c9740f735a1917ff.jpg
+2026-08-08 16:52:28,202 - ERROR - 封面图片下载失败: 封面图片下载失败
+2026-08-08 16:52:31,676 - ERROR - 请求失败 (尝试 1/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/edb9cc6c9428b01b21cea542fdd03d12.jpg
+2026-08-08 16:52:36,736 - ERROR - 请求失败 (尝试 2/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/edb9cc6c9428b01b21cea542fdd03d12.jpg
+2026-08-08 16:52:41,796 - ERROR - 请求失败 (尝试 3/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/edb9cc6c9428b01b21cea542fdd03d12.jpg
+2026-08-08 16:52:41,797 - ERROR - 封面图片下载失败: 封面图片下载失败
+2026-08-08 16:52:46,124 - ERROR - 请求失败 (尝试 1/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/58a924e24b3cb4abfb77f1077d07fefd.jpg
+2026-08-08 16:52:51,196 - ERROR - 请求失败 (尝试 2/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/58a924e24b3cb4abfb77f1077d07fefd.jpg
+2026-08-08 16:52:56,255 - ERROR - 请求失败 (尝试 3/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/58a924e24b3cb4abfb77f1077d07fefd.jpg
+2026-08-08 16:52:56,255 - ERROR - 封面图片下载失败: 封面图片下载失败
+2026-08-08 16:52:59,307 - ERROR - 请求失败 (尝试 1/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/e35257bc79b3631fa4a2970e65cf6089.jpg
+2026-08-08 16:53:04,369 - ERROR - 请求失败 (尝试 2/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/e35257bc79b3631fa4a2970e65cf6089.jpg
+2026-08-08 16:53:09,429 - ERROR - 请求失败 (尝试 3/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/e35257bc79b3631fa4a2970e65cf6089.jpg
+2026-08-08 16:53:09,430 - ERROR - 封面图片下载失败: 封面图片下载失败
+2026-08-08 16:53:14,153 - ERROR - 请求失败 (尝试 1/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/0795811eafec27e813e51718d15f078f.jpg
+2026-08-08 16:53:19,268 - ERROR - 请求失败 (尝试 2/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/0795811eafec27e813e51718d15f078f.jpg
+2026-08-08 16:53:24,326 - ERROR - 请求失败 (尝试 3/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/0795811eafec27e813e51718d15f078f.jpg
+2026-08-08 16:53:24,327 - ERROR - 封面图片下载失败: 封面图片下载失败
+2026-08-08 16:53:29,686 - ERROR - 请求失败 (尝试 1/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/0806d0c2ea73f27c3d5ee67d5e65664e.jpg
+2026-08-08 16:53:34,745 - ERROR - 请求失败 (尝试 2/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/0806d0c2ea73f27c3d5ee67d5e65664e.jpg
+2026-08-08 16:53:39,807 - ERROR - 请求失败 (尝试 3/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/0806d0c2ea73f27c3d5ee67d5e65664e.jpg
+2026-08-08 16:53:39,808 - ERROR - 封面图片下载失败: 封面图片下载失败
+2026-08-08 16:53:42,715 - ERROR - 请求失败 (尝试 1/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/073a11d55bb09d6aa790aa4128caa84f.jpg
+2026-08-08 16:53:47,775 - ERROR - 请求失败 (尝试 2/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/073a11d55bb09d6aa790aa4128caa84f.jpg
+2026-08-08 16:53:52,835 - ERROR - 请求失败 (尝试 3/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/073a11d55bb09d6aa790aa4128caa84f.jpg
+2026-08-08 16:53:52,836 - ERROR - 封面图片下载失败: 封面图片下载失败
+2026-08-08 16:53:56,922 - ERROR - 请求失败 (尝试 1/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/eed4261e5e5351b59bcde460da4212ec.jpg
+2026-08-08 16:54:01,980 - ERROR - 请求失败 (尝试 2/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/eed4261e5e5351b59bcde460da4212ec.jpg
+2026-08-08 16:54:07,050 - ERROR - 请求失败 (尝试 3/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/eed4261e5e5351b59bcde460da4212ec.jpg
+2026-08-08 16:54:07,050 - ERROR - 封面图片下载失败: 封面图片下载失败
+2026-08-08 16:54:09,561 - ERROR - 请求失败 (尝试 1/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/5f30e87eabe128060887597fb1d95530.jpg
+2026-08-08 16:54:14,620 - ERROR - 请求失败 (尝试 2/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/5f30e87eabe128060887597fb1d95530.jpg
+2026-08-08 16:54:19,680 - ERROR - 请求失败 (尝试 3/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/5f30e87eabe128060887597fb1d95530.jpg
+2026-08-08 16:54:19,681 - ERROR - 封面图片下载失败: 封面图片下载失败
+2026-08-08 16:54:23,356 - ERROR - 请求失败 (尝试 1/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/eae9700a714e425f73995764be569cb3.jpg
+2026-08-08 16:54:28,414 - ERROR - 请求失败 (尝试 2/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/eae9700a714e425f73995764be569cb3.jpg
+2026-08-08 16:54:33,474 - ERROR - 请求失败 (尝试 3/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/eae9700a714e425f73995764be569cb3.jpg
+2026-08-08 16:54:33,475 - ERROR - 封面图片下载失败: 封面图片下载失败
+2026-08-08 16:54:37,371 - ERROR - 请求失败 (尝试 1/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/c20a18a67fa88d65cd0d855b2f515720.jpg
+2026-08-08 16:54:42,430 - ERROR - 请求失败 (尝试 2/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/c20a18a67fa88d65cd0d855b2f515720.jpg
+2026-08-08 16:54:47,497 - ERROR - 请求失败 (尝试 3/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/c20a18a67fa88d65cd0d855b2f515720.jpg
+2026-08-08 16:54:47,497 - ERROR - 封面图片下载失败: 封面图片下载失败
+2026-08-08 16:54:51,527 - ERROR - 请求失败 (尝试 1/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/d08cf0b8392e9b7844013017175ecf18.jpg
+2026-08-08 16:54:56,588 - ERROR - 请求失败 (尝试 2/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/d08cf0b8392e9b7844013017175ecf18.jpg
+2026-08-08 16:55:01,765 - ERROR - 请求失败 (尝试 3/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/d08cf0b8392e9b7844013017175ecf18.jpg
+2026-08-08 16:55:01,766 - ERROR - 封面图片下载失败: 封面图片下载失败
+2026-08-08 16:55:06,445 - ERROR - 请求失败 (尝试 1/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/b05a96ec38be7e68e21dc58631759f26.jpg
+2026-08-08 16:55:11,676 - ERROR - 请求失败 (尝试 2/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/b05a96ec38be7e68e21dc58631759f26.jpg
+2026-08-08 16:55:16,743 - ERROR - 请求失败 (尝试 3/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/b05a96ec38be7e68e21dc58631759f26.jpg
+2026-08-08 16:55:16,744 - ERROR - 封面图片下载失败: 封面图片下载失败
+2026-08-08 16:55:19,817 - ERROR - 请求失败 (尝试 1/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/4dc63c87782bdc9c13799f8d7dada965.jpg
+2026-08-08 16:55:24,900 - ERROR - 请求失败 (尝试 2/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/4dc63c87782bdc9c13799f8d7dada965.jpg
+2026-08-08 16:55:30,022 - ERROR - 请求失败 (尝试 3/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/4dc63c87782bdc9c13799f8d7dada965.jpg
+2026-08-08 16:55:30,023 - ERROR - 封面图片下载失败: 封面图片下载失败
+2026-08-08 16:55:35,058 - ERROR - 请求失败 (尝试 1/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/f8e7058faaf5e5d718498b5d628ce2da.jpg
+2026-08-08 16:55:40,217 - ERROR - 请求失败 (尝试 2/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/f8e7058faaf5e5d718498b5d628ce2da.jpg
+2026-08-08 16:55:45,278 - ERROR - 请求失败 (尝试 3/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/f8e7058faaf5e5d718498b5d628ce2da.jpg
+2026-08-08 16:55:45,279 - ERROR - 封面图片下载失败: 封面图片下载失败
+2026-08-08 16:55:50,237 - ERROR - 请求失败 (尝试 1/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/b9a76307ca86e35edfdd7e15ddb9569f.jpg
+2026-08-08 16:55:55,538 - ERROR - 请求失败 (尝试 2/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/b9a76307ca86e35edfdd7e15ddb9569f.jpg
+2026-08-08 16:56:00,781 - ERROR - 请求失败 (尝试 3/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/b9a76307ca86e35edfdd7e15ddb9569f.jpg
+2026-08-08 16:56:00,782 - ERROR - 封面图片下载失败: 封面图片下载失败
+2026-08-08 16:56:04,334 - ERROR - 请求失败 (尝试 1/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/e295a431ddd717f943cb97aa55bd70ab.jpg
+2026-08-08 16:56:09,391 - ERROR - 请求失败 (尝试 2/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/e295a431ddd717f943cb97aa55bd70ab.jpg
+2026-08-08 16:56:14,454 - ERROR - 请求失败 (尝试 3/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/e295a431ddd717f943cb97aa55bd70ab.jpg
+2026-08-08 16:56:14,455 - ERROR - 封面图片下载失败: 封面图片下载失败
+2026-08-08 16:56:19,646 - ERROR - 请求失败 (尝试 1/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/8b9b350777d6743ec6d046753ee32cc4.jpg
+2026-08-08 16:56:24,704 - ERROR - 请求失败 (尝试 2/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/8b9b350777d6743ec6d046753ee32cc4.jpg
+2026-08-08 16:56:29,763 - ERROR - 请求失败 (尝试 3/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/8b9b350777d6743ec6d046753ee32cc4.jpg
+2026-08-08 16:56:29,764 - ERROR - 封面图片下载失败: 封面图片下载失败
+2026-08-08 16:56:33,743 - ERROR - 请求失败 (尝试 1/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/cbdaa8474ed189e0cd095be9409f0cba.jpg
+2026-08-08 16:56:38,802 - ERROR - 请求失败 (尝试 2/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/cbdaa8474ed189e0cd095be9409f0cba.jpg
+2026-08-08 16:56:43,873 - ERROR - 请求失败 (尝试 3/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/cbdaa8474ed189e0cd095be9409f0cba.jpg
+2026-08-08 16:56:43,874 - ERROR - 封面图片下载失败: 封面图片下载失败
+2026-08-08 16:56:48,859 - ERROR - 请求失败 (尝试 1/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/789404ac770b5fb98dd29642c392f6b2.jpg
+2026-08-08 16:56:53,926 - ERROR - 请求失败 (尝试 2/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/789404ac770b5fb98dd29642c392f6b2.jpg
+2026-08-08 16:56:58,989 - ERROR - 请求失败 (尝试 3/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/789404ac770b5fb98dd29642c392f6b2.jpg
+2026-08-08 16:56:58,990 - ERROR - 封面图片下载失败: 封面图片下载失败
+2026-08-08 16:57:03,013 - ERROR - 请求失败 (尝试 1/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/469be49b163123ca7207bd149abe8c62.jpg
+2026-08-08 16:57:08,072 - ERROR - 请求失败 (尝试 2/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/469be49b163123ca7207bd149abe8c62.jpg
+2026-08-08 16:57:13,132 - ERROR - 请求失败 (尝试 3/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/469be49b163123ca7207bd149abe8c62.jpg
+2026-08-08 16:57:13,133 - ERROR - 封面图片下载失败: 封面图片下载失败
+2026-08-08 16:57:17,535 - ERROR - 请求失败 (尝试 1/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/6c302e3dd5b5928173e07b7f98b11235.jpg
+2026-08-08 16:57:22,597 - ERROR - 请求失败 (尝试 2/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/6c302e3dd5b5928173e07b7f98b11235.jpg
+2026-08-08 16:57:27,660 - ERROR - 请求失败 (尝试 3/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/6c302e3dd5b5928173e07b7f98b11235.jpg
+2026-08-08 16:57:27,661 - ERROR - 封面图片下载失败: 封面图片下载失败
+2026-08-08 16:57:31,296 - ERROR - 请求失败 (尝试 1/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/a694e39489181d003379af2ae51c08c4.jpg
+2026-08-08 16:57:36,358 - ERROR - 请求失败 (尝试 2/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/a694e39489181d003379af2ae51c08c4.jpg
+2026-08-08 16:57:41,477 - ERROR - 请求失败 (尝试 3/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/a694e39489181d003379af2ae51c08c4.jpg
+2026-08-08 16:57:41,478 - ERROR - 封面图片下载失败: 封面图片下载失败
+2026-08-08 16:57:43,977 - ERROR - 请求失败 (尝试 1/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/98314ec40dc36aeb701e872e809140c2.jpg
+2026-08-08 16:57:49,037 - ERROR - 请求失败 (尝试 2/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/98314ec40dc36aeb701e872e809140c2.jpg
+2026-08-08 16:57:54,097 - ERROR - 请求失败 (尝试 3/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/98314ec40dc36aeb701e872e809140c2.jpg
+2026-08-08 16:57:54,098 - ERROR - 封面图片下载失败: 封面图片下载失败
+2026-08-08 16:57:58,228 - ERROR - 请求失败 (尝试 1/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/33e4f407f026ac0634abd8010afc129f.jpg
+2026-08-08 16:58:03,288 - ERROR - 请求失败 (尝试 2/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/33e4f407f026ac0634abd8010afc129f.jpg
+2026-08-08 16:58:08,349 - ERROR - 请求失败 (尝试 3/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/33e4f407f026ac0634abd8010afc129f.jpg
+2026-08-08 16:58:08,350 - ERROR - 封面图片下载失败: 封面图片下载失败
+2026-08-08 16:58:12,544 - ERROR - 请求失败 (尝试 1/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/ff62d823f3384e67165e9427c9388280.jpg
+2026-08-08 16:58:17,604 - ERROR - 请求失败 (尝试 2/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/ff62d823f3384e67165e9427c9388280.jpg
+2026-08-08 16:58:22,670 - ERROR - 请求失败 (尝试 3/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/ff62d823f3384e67165e9427c9388280.jpg
+2026-08-08 16:58:22,671 - ERROR - 封面图片下载失败: 封面图片下载失败
+2026-08-08 16:58:27,808 - ERROR - 请求失败 (尝试 1/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/f4a58c21d66c3ab9a542ad7d7e686bb8.jpg
+2026-08-08 16:58:32,866 - ERROR - 请求失败 (尝试 2/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/f4a58c21d66c3ab9a542ad7d7e686bb8.jpg
+2026-08-08 16:58:37,925 - ERROR - 请求失败 (尝试 3/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/f4a58c21d66c3ab9a542ad7d7e686bb8.jpg
+2026-08-08 16:58:37,926 - ERROR - 封面图片下载失败: 封面图片下载失败
+2026-08-08 16:58:42,008 - ERROR - 请求失败 (尝试 1/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/cbaba14d14950b912f5778796ebe12ae.jpg
+2026-08-08 16:58:47,066 - ERROR - 请求失败 (尝试 2/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/cbaba14d14950b912f5778796ebe12ae.jpg
+2026-08-08 16:58:52,126 - ERROR - 请求失败 (尝试 3/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/cbaba14d14950b912f5778796ebe12ae.jpg
+2026-08-08 16:58:52,127 - ERROR - 封面图片下载失败: 封面图片下载失败
+2026-08-08 16:58:54,821 - ERROR - 请求失败 (尝试 1/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/0b5eac970c9600629ed8eece57ee3a56.jpg
+2026-08-08 16:58:59,883 - ERROR - 请求失败 (尝试 2/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/0b5eac970c9600629ed8eece57ee3a56.jpg
+2026-08-08 16:59:05,016 - ERROR - 请求失败 (尝试 3/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/0b5eac970c9600629ed8eece57ee3a56.jpg
+2026-08-08 16:59:05,017 - ERROR - 封面图片下载失败: 封面图片下载失败
+2026-08-08 16:59:08,013 - ERROR - 请求失败 (尝试 1/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/31e18b9e1cb807da18969c1c6bdb35f7.jpg
+2026-08-08 16:59:13,071 - ERROR - 请求失败 (尝试 2/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/31e18b9e1cb807da18969c1c6bdb35f7.jpg
+2026-08-08 16:59:18,133 - ERROR - 请求失败 (尝试 3/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/31e18b9e1cb807da18969c1c6bdb35f7.jpg
+2026-08-08 16:59:18,134 - ERROR - 封面图片下载失败: 封面图片下载失败
+2026-08-08 16:59:22,130 - ERROR - 请求失败 (尝试 1/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/09e9b8565a4b1ba02912e6050fa0839f.jpg
+2026-08-08 16:59:27,190 - ERROR - 请求失败 (尝试 2/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/09e9b8565a4b1ba02912e6050fa0839f.jpg
+2026-08-08 16:59:32,399 - ERROR - 请求失败 (尝试 3/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/09e9b8565a4b1ba02912e6050fa0839f.jpg
+2026-08-08 16:59:32,400 - ERROR - 封面图片下载失败: 封面图片下载失败
+2026-08-08 16:59:36,833 - ERROR - 请求失败 (尝试 1/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/090ffea4baf99f279a34affcd9421379.jpg
+2026-08-08 16:59:41,894 - ERROR - 请求失败 (尝试 2/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/090ffea4baf99f279a34affcd9421379.jpg
+2026-08-08 16:59:46,954 - ERROR - 请求失败 (尝试 3/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/090ffea4baf99f279a34affcd9421379.jpg
+2026-08-08 16:59:46,955 - ERROR - 封面图片下载失败: 封面图片下载失败
+2026-08-08 16:59:49,745 - ERROR - 请求失败 (尝试 1/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/008bf13a8f7be64451ccbe21fb672c96.jpg
+2026-08-08 16:59:54,952 - ERROR - 请求失败 (尝试 2/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/008bf13a8f7be64451ccbe21fb672c96.jpg
+2026-08-08 17:00:00,131 - ERROR - 请求失败 (尝试 3/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/008bf13a8f7be64451ccbe21fb672c96.jpg
+2026-08-08 17:00:00,131 - ERROR - 封面图片下载失败: 封面图片下载失败
+2026-08-08 17:00:03,635 - ERROR - 请求失败 (尝试 1/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/d1856159683d6fdbc4d264c3012d8797.jpg
+2026-08-08 17:00:08,693 - ERROR - 请求失败 (尝试 2/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/d1856159683d6fdbc4d264c3012d8797.jpg
+2026-08-08 17:00:13,847 - ERROR - 请求失败 (尝试 3/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/d1856159683d6fdbc4d264c3012d8797.jpg
+2026-08-08 17:00:13,848 - ERROR - 封面图片下载失败: 封面图片下载失败
+2026-08-08 17:00:18,731 - ERROR - 请求失败 (尝试 1/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/48646e3ac5ed3ef7bb2a82b1b72e4186.jpg
+2026-08-08 17:00:23,790 - ERROR - 请求失败 (尝试 2/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/48646e3ac5ed3ef7bb2a82b1b72e4186.jpg
+2026-08-08 17:00:28,855 - ERROR - 请求失败 (尝试 3/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/48646e3ac5ed3ef7bb2a82b1b72e4186.jpg
+2026-08-08 17:00:28,856 - ERROR - 封面图片下载失败: 封面图片下载失败
+2026-08-08 17:00:33,460 - ERROR - 请求失败 (尝试 1/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/cc1272e80edbb3891f343d5a45b53995.jpg
+2026-08-08 17:00:38,690 - ERROR - 请求失败 (尝试 2/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/cc1272e80edbb3891f343d5a45b53995.jpg
+2026-08-08 17:00:43,748 - ERROR - 请求失败 (尝试 3/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/cc1272e80edbb3891f343d5a45b53995.jpg
+2026-08-08 17:00:43,749 - ERROR - 封面图片下载失败: 封面图片下载失败
+2026-08-08 17:00:48,449 - ERROR - 请求失败 (尝试 1/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/633e8b23304a7316d31be05def309a93.jpg
+2026-08-08 17:00:53,509 - ERROR - 请求失败 (尝试 2/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/633e8b23304a7316d31be05def309a93.jpg
+2026-08-08 17:00:58,571 - ERROR - 请求失败 (尝试 3/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/633e8b23304a7316d31be05def309a93.jpg
+2026-08-08 17:00:58,572 - ERROR - 封面图片下载失败: 封面图片下载失败
+2026-08-08 17:01:01,174 - ERROR - 请求失败 (尝试 1/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/54cf54fbd0cc876f60ad3fb6ed7b8f4a.jpg
+2026-08-08 17:01:06,234 - ERROR - 请求失败 (尝试 2/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/54cf54fbd0cc876f60ad3fb6ed7b8f4a.jpg
+2026-08-08 17:01:11,293 - ERROR - 请求失败 (尝试 3/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/54cf54fbd0cc876f60ad3fb6ed7b8f4a.jpg
+2026-08-08 17:01:11,294 - ERROR - 封面图片下载失败: 封面图片下载失败
+2026-08-08 17:01:16,266 - ERROR - 请求失败 (尝试 1/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/3cd02137888156e172b67126263e1d40.jpg
+2026-08-08 17:01:21,325 - ERROR - 请求失败 (尝试 2/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/3cd02137888156e172b67126263e1d40.jpg
+2026-08-08 17:01:26,409 - ERROR - 请求失败 (尝试 3/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/3cd02137888156e172b67126263e1d40.jpg
+2026-08-08 17:01:26,409 - ERROR - 封面图片下载失败: 封面图片下载失败
+2026-08-08 17:01:31,188 - ERROR - 请求失败 (尝试 1/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/60de3e1320094e0eae205daec43f283f.jpg
+2026-08-08 17:01:36,247 - ERROR - 请求失败 (尝试 2/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/60de3e1320094e0eae205daec43f283f.jpg
+2026-08-08 17:01:41,416 - ERROR - 请求失败 (尝试 3/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/60de3e1320094e0eae205daec43f283f.jpg
+2026-08-08 17:01:41,417 - ERROR - 封面图片下载失败: 封面图片下载失败
+2026-08-08 17:01:46,521 - ERROR - 请求失败 (尝试 1/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/29b99b6a16c3aa0cdba5cefc0a508cde.jpg
+2026-08-08 17:01:51,582 - ERROR - 请求失败 (尝试 2/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/29b99b6a16c3aa0cdba5cefc0a508cde.jpg
+2026-08-08 17:01:56,641 - ERROR - 请求失败 (尝试 3/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/29b99b6a16c3aa0cdba5cefc0a508cde.jpg
+2026-08-08 17:01:56,642 - ERROR - 封面图片下载失败: 封面图片下载失败
+2026-08-08 17:02:00,432 - ERROR - 请求失败 (尝试 1/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/24c718831b46f19e2230cca070990102.jpg
+2026-08-08 17:02:05,490 - ERROR - 请求失败 (尝试 2/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/24c718831b46f19e2230cca070990102.jpg
+2026-08-08 17:02:10,550 - ERROR - 请求失败 (尝试 3/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/24c718831b46f19e2230cca070990102.jpg
+2026-08-08 17:02:10,551 - ERROR - 封面图片下载失败: 封面图片下载失败
+2026-08-08 17:02:15,742 - ERROR - 请求失败 (尝试 1/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/a748b0f805a85bf57453a02848543abd.jpg
+2026-08-08 17:02:20,800 - ERROR - 请求失败 (尝试 2/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/a748b0f805a85bf57453a02848543abd.jpg
+2026-08-08 17:02:25,860 - ERROR - 请求失败 (尝试 3/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/a748b0f805a85bf57453a02848543abd.jpg
+2026-08-08 17:02:25,861 - ERROR - 封面图片下载失败: 封面图片下载失败
+2026-08-08 17:02:30,689 - ERROR - 请求失败 (尝试 1/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/e3cf5953ccf1924fb2beba3c3517ae3c.jpg
+2026-08-08 17:02:35,748 - ERROR - 请求失败 (尝试 2/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/e3cf5953ccf1924fb2beba3c3517ae3c.jpg
+2026-08-08 17:02:40,809 - ERROR - 请求失败 (尝试 3/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/e3cf5953ccf1924fb2beba3c3517ae3c.jpg
+2026-08-08 17:02:40,810 - ERROR - 封面图片下载失败: 封面图片下载失败
+2026-08-08 17:02:44,700 - ERROR - 请求失败 (尝试 1/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/b7481497ac4d62e47bd9fb8e6aa6b45a.jpg
+2026-08-08 17:02:49,760 - ERROR - 请求失败 (尝试 2/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/b7481497ac4d62e47bd9fb8e6aa6b45a.jpg
+2026-08-08 17:02:54,824 - ERROR - 请求失败 (尝试 3/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/b7481497ac4d62e47bd9fb8e6aa6b45a.jpg
+2026-08-08 17:02:54,825 - ERROR - 封面图片下载失败: 封面图片下载失败
+2026-08-08 17:02:59,327 - ERROR - 请求失败 (尝试 1/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/6b8171ffa4f379957777ad08f82f95d1.jpg
+2026-08-08 17:03:04,387 - ERROR - 请求失败 (尝试 2/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/6b8171ffa4f379957777ad08f82f95d1.jpg
+2026-08-08 17:03:09,522 - ERROR - 请求失败 (尝试 3/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/6b8171ffa4f379957777ad08f82f95d1.jpg
+2026-08-08 17:03:09,523 - ERROR - 封面图片下载失败: 封面图片下载失败
+2026-08-08 17:03:14,100 - ERROR - 请求失败 (尝试 1/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/46f24b3ca19d1be372338d68297d4b3e.jpg
+2026-08-08 17:03:19,210 - ERROR - 请求失败 (尝试 2/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/46f24b3ca19d1be372338d68297d4b3e.jpg
+2026-08-08 17:03:24,416 - ERROR - 请求失败 (尝试 3/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/46f24b3ca19d1be372338d68297d4b3e.jpg
+2026-08-08 17:03:24,417 - ERROR - 封面图片下载失败: 封面图片下载失败
+2026-08-08 17:03:29,652 - ERROR - 请求失败 (尝试 1/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/c27cb23505909f5be3ee46fa7a10646a.jpg
+2026-08-08 17:03:34,763 - ERROR - 请求失败 (尝试 2/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/c27cb23505909f5be3ee46fa7a10646a.jpg
+2026-08-08 17:03:40,012 - ERROR - 请求失败 (尝试 3/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/c27cb23505909f5be3ee46fa7a10646a.jpg
+2026-08-08 17:03:40,013 - ERROR - 封面图片下载失败: 封面图片下载失败
+2026-08-08 17:03:44,928 - ERROR - 请求失败 (尝试 1/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/a26b91adb4e9b4f4af9f596c73319ce6.jpg
+2026-08-08 17:03:49,986 - ERROR - 请求失败 (尝试 2/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/a26b91adb4e9b4f4af9f596c73319ce6.jpg
+2026-08-08 17:03:55,190 - ERROR - 请求失败 (尝试 3/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/a26b91adb4e9b4f4af9f596c73319ce6.jpg
+2026-08-08 17:03:55,191 - ERROR - 封面图片下载失败: 封面图片下载失败
+2026-08-08 17:04:00,410 - ERROR - 请求失败 (尝试 1/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/e8a48c5f43f63a2f1a4ca23175b76436.jpg
+2026-08-08 17:04:05,472 - ERROR - 请求失败 (尝试 2/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/e8a48c5f43f63a2f1a4ca23175b76436.jpg
+2026-08-08 17:04:10,536 - ERROR - 请求失败 (尝试 3/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/e8a48c5f43f63a2f1a4ca23175b76436.jpg
+2026-08-08 17:04:10,537 - ERROR - 封面图片下载失败: 封面图片下载失败
+2026-08-08 17:04:14,080 - ERROR - 请求失败 (尝试 1/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/ba48e3bddfd8b7160acdedcad3055780.jpg
+2026-08-08 17:04:19,140 - ERROR - 请求失败 (尝试 2/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/ba48e3bddfd8b7160acdedcad3055780.jpg
+2026-08-08 17:04:24,198 - ERROR - 请求失败 (尝试 3/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/ba48e3bddfd8b7160acdedcad3055780.jpg
+2026-08-08 17:04:24,199 - ERROR - 封面图片下载失败: 封面图片下载失败
+2026-08-08 17:04:29,083 - ERROR - 请求失败 (尝试 1/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/24dc76a04ac91090244418763e1e1d2a.jpg
+2026-08-08 17:04:34,143 - ERROR - 请求失败 (尝试 2/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/24dc76a04ac91090244418763e1e1d2a.jpg
+2026-08-08 17:04:39,202 - ERROR - 请求失败 (尝试 3/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/24dc76a04ac91090244418763e1e1d2a.jpg
+2026-08-08 17:04:39,203 - ERROR - 封面图片下载失败: 封面图片下载失败
+2026-08-08 17:04:42,810 - ERROR - 请求失败 (尝试 1/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/6293b86288dc2a0ba9e05086222f4e87.jpg
+2026-08-08 17:04:47,870 - ERROR - 请求失败 (尝试 2/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/6293b86288dc2a0ba9e05086222f4e87.jpg
+2026-08-08 17:04:52,929 - ERROR - 请求失败 (尝试 3/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/6293b86288dc2a0ba9e05086222f4e87.jpg
+2026-08-08 17:04:52,930 - ERROR - 封面图片下载失败: 封面图片下载失败
+2026-08-08 17:04:57,038 - ERROR - 请求失败 (尝试 1/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/983cf4f0684d41c583823f2446e52bf7.jpg
+2026-08-08 17:05:02,097 - ERROR - 请求失败 (尝试 2/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/983cf4f0684d41c583823f2446e52bf7.jpg
+2026-08-08 17:05:07,158 - ERROR - 请求失败 (尝试 3/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/983cf4f0684d41c583823f2446e52bf7.jpg
+2026-08-08 17:05:07,159 - ERROR - 封面图片下载失败: 封面图片下载失败
+2026-08-08 17:05:12,319 - ERROR - 请求失败 (尝试 1/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/b7481497ac4d62e47bd9fb8e6aa6b45a.jpg
+2026-08-08 17:05:17,380 - ERROR - 请求失败 (尝试 2/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/b7481497ac4d62e47bd9fb8e6aa6b45a.jpg
+2026-08-08 17:05:22,441 - ERROR - 请求失败 (尝试 3/3): 403 Client Error: Forbidden for url: https://image.huyajs.com/cover/b7481497ac4d62e47bd9fb8e6aa6b45a.jpg
+2026-08-08 17:05:22,442 - ERROR - 封面图片下载失败: 封面图片下载失败
